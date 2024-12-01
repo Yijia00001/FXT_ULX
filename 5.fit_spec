@@ -1,0 +1,41 @@
+#!/bin/bash
+## fit the spectra
+
+loop_index=1
+
+cat source_list.txt | while read line;
+do
+    echo $line
+    if [ $loop_index -eq 1 ]; then
+        obsid_list=(`echo $line | tr ',' ' '`)
+        unset obsid_list[0]
+        #continue
+    else
+        source_index=1
+        #echo ${obsid_list[@]}
+        temp=(`echo $line | tr ',' ' '`)
+        #echo ${temp[@]}
+        unset temp[0]
+        for obsid in ${obsid_list[@]}
+        do
+            cd data/$obsid
+            #mkdir figure
+            if [ "${temp[${source_index}]}" = '-' ]; then
+                cd ../..
+                let source_index++
+                continue
+            fi
+            xspec - cal_flux_${temp[${source_index}]}
+            mv ${temp[${source_index}]}.png_2 fit_image/${temp[${source_index}]}.png
+            rm ${temp[${source_index}]}.png
+            echo $loop_index
+            #echo ${obsid}
+            #echo ${temp[${source_index}]}
+            #echo $source_index
+            pwd
+            cd ../..
+            let source_index++
+        done
+    fi
+    let loop_index++
+done

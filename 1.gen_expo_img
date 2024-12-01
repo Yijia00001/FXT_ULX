@@ -1,0 +1,38 @@
+#!/bin/bash
+## generate expno image 
+
+ls data > obsid_list.txt
+#mv obsid_list.txt ..
+
+# # soft link
+# cd ./A_img
+cat obsid_list.txt | while read line;
+do
+    if [ `grep -c "$line" finish.txt` -ne '0' ]; then
+        continue
+    fi
+    
+    cd data/$line
+    inst_list=("a" "b")
+    for inst in ${inst_list[@]};
+    do
+        #mkdir ${inst}
+        cd ${inst}
+        evt_file=`ls ../fxt/products/*_${inst}_*`
+        mkf_file=`ls ../fxt/hk/*mkf*`
+        img_file=expo_$inst.img
+
+        echo $evt_file
+
+        fxtexpogen mkffile=${mkf_file} evtfile=${evt_file} outfile=${img_file} clobber=yes
+
+        #dmcopy ${evt_file}"[ENG=0.5:10]" ${img_file} option=image clobber=yes
+
+        cd ..
+    done
+    cd ../..
+    #break 1
+done
+# cd ..
+
+

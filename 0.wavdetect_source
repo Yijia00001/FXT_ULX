@@ -1,0 +1,60 @@
+#!/bin/bash
+## run wavdetect for source detection
+
+# wavdetect of source
+
+ls data > obsid_list.txt
+#mv obsid_list.txt ..
+
+# # soft link
+# cd ./A_img
+cat obsid_list.txt | while read line;
+do
+    ## check whether or not the file has been wave detected
+    if [ `grep -c "$line" finish.txt` -ne '0' ]; then
+        continue
+    fi
+
+    #echo $line
+    cd data/$line
+    inst_list=("a" "b")
+    for inst in ${inst_list[@]};
+    do
+        mkdir ${inst}
+        cd ${inst}
+        evt_file=`ls ../fxt/products/*_${inst}_*`
+        img_file=${inst}.img
+
+        echo $evt_file
+
+        dmcopy ${evt_file}"[ENG=0.5:10]" ${img_file} option=image clobber=yes
+
+        # creat PSF size
+        #mkpsfmap pn_img_best.fits outfile=pn_psfmap.fits energy=1 ecf=0.9
+        dmimgcalc infile=$img_file infile2=none out="psfmap.fits" op="imgout=((img1*0)+9)" clobber=yes
+        dmhedit psfmap.fits filelist=none operation=add key=BUNIT value="arcsec"
+
+        #wave detect
+        punlearn wavdetect
+        pset wavdetect clobber=yes
+        pset wavdetect verbose=2
+        pset wavdetect infile=$img_file
+        pset wavdetect psffile=psfmap.fits
+        pset wavdetect outfile=wav_src.fits
+        pset wavdetect scellfile=wav_cell.fits
+        pset wavdetect imagefile=wav_recon.fits
+        pset wavdetect defnbkgfile=wav_bkg.fits
+        pset wavdetect regfile=wavdetect.reg
+        pset wavdetect ellsigma=3.0
+        pset wavdetect scales="1 2 4 8 16"
+        pset wavdetect sigthresh=1e-6
+        pset wavdetect bkgsigthresh=1e-3
+        wavdetect mode=h clobber=yes
+        cd ..
+    done
+    cd ../..
+    #break 1
+done
+# cd ..
+
+
