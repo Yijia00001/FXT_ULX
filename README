@@ -1,0 +1,36 @@
+## THE README IS FOR HOW TO RUN THE CODEs
+
+## RUN the wavedetect to detect sources, need CIAO environment
+. 0.wavdetect_source 
+
+## generate the exposure map, need fxtsoft environment
+. 1.gen_expo_img
+
+## generate source region file for each source
+python3 generate_source_reg.py
+
+## You need to generate th bkg.reg for each observation by hand
+## generate .pi, .rmf, .arf files for each source it should be mentioned that 
+## bkg.reg is need to be genereted by hands
+. 2.spec
+
+## generate grp file for spectra
+python3 grpmin.py
+
+## grppha spectra utilizing the grp files from grpmin.py
+.  3.grp_spec
+
+## generate xspec files for each source
+. 4.gen_fit_file
+
+## check ULX targets in Walton et al. 2018, If you trust the results from this
+## selection, you can find the coordinates of targets in ULX_list.py and copy them 
+## to the top of gen_source_list.py
+python3 check_ULX_in_gal.py
+
+## generate source list for given known sources
+python3 gen_source_list.py
+
+## fit the spectrum of sources in source_list.txt
+. 5.fit_spec
+
