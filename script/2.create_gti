@@ -1,0 +1,50 @@
+#!/bin/bash
+
+obsids=`ls -d [0-9][0-9][0-9]* `
+
+for obsid in ${obsids};
+do
+	echo Processing ObsID $obsid ...
+	
+	cd $obsid
+	
+	# determine which CCD images were created
+	CCDs=`ls *band1_flux.img | cut -d _ -f1`
+	
+	for CCDID in $CCDs
+	do
+	
+		if [ ! -e ${CCDID}.gti ]
+		then
+	
+			punlearn dmextract
+			dmextract infile="${CCDID}.evt[bin time=::200][exclude sky=region(wav_${CCDID}.reg)]" \
+	   	outfile=${CCDID}_bkg.lc opt=ltc1 clobber=yes
+	
+	
+			deflare ${CCDID}_bkg.lc outfile=${CCDID}.gti method=sigma save=${CCDID}_gti.ps
+		
+			dmcopy "${CCDID}.evt[@${CCDID}.gti]" ${CCDID}_gti.evt clobber=yes
+		fi
+		
+		
+	done
+
+	
+	
+	# fplot bkg.lc time counts - /xs quit
+	# read -n1 -r -p "Press space to continue..." key
+
+	# return to the root directory
+	cd ..
+	
+done
+
+
+###############################################
+# M101 no flares: 14341 2065 4731 4732 4734 4735 4736 5296 5300 5309 5322 5323 5337 5338 5340
+# M101 ObsIDs with flares: 4733 4737 5297 5339 6114 6115 6170 934
+# m101 4733 5297 6152
+# deflare "${CCDID}_bkg.lc[count_rate<5]" outfile=${CCDID}.gti method=sigma nsigma=2.5 save=${CCDID}_gti.ps
+# 5297
+# deflare "${CCDID}_bkg.lc[count_rate<5]" outfile=${CCDID}.gti method=sigma nsigma=2 save=${CCDID}_gti.ps

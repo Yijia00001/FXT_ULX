@@ -1,0 +1,30 @@
+statistic cstat
+data 1:1 bin_ulx.pi
+# ignore **-0.3 10.-**
+ignore bad
+
+model  TBabs*cflux(diskbb + powerlaw)
+       0.779643      -0.001          0          0     100000      1e+06
+            0.3       -0.1          0          0      1e+06      1e+06
+             10       -0.1          0          0      1e+06      1e+06
+       -10.0652       0.01       -100       -100        100        100
+      0.0755661       -0.01          0          0       1000       1000
+         888734       -0.01          0          0      1e+24      1e+24
+        2.58991       -0.01         -3         -2          9         10
+     1.8724e-05      -0.01          0          0      1e+24      1e+24
+
+query yes
+fit
+err 1.0 4
+
+tclout param 4
+set x [string trim $xspec_tclout]
+set pos [string first { } $x]
+set cf [string range $x 0 [expr $pos]]
+tclout error 4
+set cfe [string trim $xspec_tclout]
+scan $cfe "%f %f" e1 e2
+echo '$cf $e1 $e2' >> flux.txt
+
+save all ulx_bb
+exit

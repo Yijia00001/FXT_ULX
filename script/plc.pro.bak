@@ -1,0 +1,200 @@
+function powdecay, xx, pp
+; to fit a power-law decay function
+; pp[0]: normalization
+; pp[1]: start time
+; pp[2]: power-law index
+
+return, pp[0] * (xx - pp[1]) ^ pp[2]
+
+end
+
+function expdecay, xx, pp
+; to fit a power-law decay function
+; pp[0]: normalization
+; pp[1]: start time
+; pp[2]: time scale
+
+return, pp[0] * exp(-1d * (xx - pp[1]) / pp[2]) 
+
+end
+
+;#########################################################################
+;#########################################################################
+;#########################################################################
+
+pro plc, saveps=saveps
+
+files = file_search('./*/flux.txt')
+; files = files[0:-2] ; use data before the sun avoidance
+
+n_obs = n_elements(files)
+xrt_date = dblarr(n_obs)
+xrt_flux = dblarr(n_obs, 3)
+
+print, 'Time', 'Flux', 'Error Range (erg/cm2/s)', $
+	format='(A-21, A-10, A)'
+for i = 0L, n_obs - 1L do begin
+	fname = files[i]
+	readcol, fname, format='A,A,D,D,D', time0, time1, flux0, flux1, flux2, /silent
+	
+	xrt_date[i] = (date_conv(time0[0], 'MODIFIED') + date_conv(time1[0], 'MODIFIED'))/2d
+	xrt_flux[i, *] = [10d^flux0, 10d^flux1, 10d^flux2]
+	
+	print, xrt_date[i], xrt_flux[i, *], $
+		format='(A, E10.2, "  (", E8.2, " - ", E8.2, ")")'	
+endfor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; add XMM and Chandra points
+; flux corrected for absorption, err 1.0 6
+xmm_flux = 10d ^ [-11.8433, -11.8523, -11.8343]
+; DATE-OBS= '2014-07-01T05:01:03' / Start Time (UTC) of exposure
+; DATE-END= '2014-07-01T14:24:10' / End Time (UTC) of exposure
+xmm_date = (date_conv('2014-07-01T05:01:03', 'MODIFIED') + $
+				date_conv('2014-07-01T14:24:10', 'MODIFIED')) / 2d
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; nuc_po.xcm err 1.0 5
+; -11.7468 -11.7899 -11.6944
+; nuc_bp.xcm, err 1.0 5
+; -11.8443 -11.8739 -11.816
+; nuc_bp2.xcm, err 1.0 5
+; -11.8839 -11.9055 -11.8633
+
+cha_flux = 10d ^ [-11.8839, -11.9055, -11.8633]
+; DATE-OBS= '2014-11-12T05:34:48' / Observation start date
+; DATE-END= '2014-11-12T07:30:13' / Observation end date
+cha_date = (date_conv('2014-11-12T05:34:48', 'MODIFIED') + $
+				date_conv('2014-11-12T07:30:13', 'MODIFIED')) / 2d
+
+;#################################################################
+MJD0 = 56000L
+flux2lum = f2l(3.4d) / 1d39 ; convert from ergs/cm2/s to 1E39 erg/s
+
+; fit a power-law decay function
+fx = [xmm_date, cha_date, xrt_date] - MJD0
+fy = [xmm_flux[0], cha_flux[0], xrt_flux[*, 0]] * flux2lum
+ferr = [xmm_flux[2]-xmm_flux[1], cha_flux[2]-cha_flux[1], xrt_flux[*,2]-xrt_flux[*,1]] / 2d * flux2lum ; errors
+; q = where(fx ge 900 and (fx le 960 or fx ge 975)) ; without XMM 
+qfit = where(fx le 960 or fx ge 975) ; XMM + XRT (no flares)
+; qfit = where(fx gt 0) ; all data
+; qfit = where(fx gt 960)
+; plots, fx[qfit], fy[qfit], psym=5, symsize=4, color=cgcolor('purple')
+
+parinfo = replicate({value:0d, fixed:0, limited:[0,0], limits:[0,0d], step:0d}, 3)
+parinfo[1].limited = 1
+parinfo[1].limits = [-1d5, fx[0]]
+parinfo[2].fixed = 1 ; fix the powerlaw index
+parinfo[2].value = -5d / 3d
+
+par = mpfitfun('powdecay', fx[qfit], fy[qfit], ferr[qfit], $
+	parinfo=parinfo, perror=perr, yfit=yfit, /quiet, $
+	nfev=nfev, niter=niter, status=status, dof=dof, bestnorm=bestnorm)
+
+print, '-------------------------------------------------------'
+print, '*** Status:', status
+print, format='("*** Normalization (erg/s): ", E0.2, " +/- ", E0.2)', par[0]*1d39, perr[0]*1d39
+print, format='("*** Start Time (MJD): ", F0.2, " +/- ", F0.2)', MJD0+par[1], perr[1]
+print, format='("***            (UTC): ", A0)', date_conv(par[1] + 56000d + 2400000.5d, 'F')
+print, format='("*** Decay poewr-law index: ", F0.2, " +/- ", F0.2)', par[2], perr[2]
+print, format='("*** Chi^2/DoF: ", F0.1, " / ", I0)', bestnorm, dof
+
+;#################################################################
+
+; fit an exponential decay function
+qfit1 = where(fx gt 960) ; post flare
+parinfo1 = replicate({value:0d, fixed:0, limited:[0,0], limits:[0,0d], step:0d}, 3)
+parinfo1[0].value = 2.0
+; parinfo1[1].fixed = 1
+parinfo[1].limited = 1
+parinfo[1].limits = [956.48455, 964.10908]
+parinfo1[1].value = 960.0
+; parinfo1[2].fixed = 1
+parinfo1[2].value = 30.0
+
+par1 = mpfitfun('expdecay', fx[qfit1], fy[qfit1], ferr[qfit1], $
+	parinfo=parinfo1, perror=perr1, yfit=yfit1, /quiet, $
+	nfev=nfev1, niter=niter1, status=status1, dof=dof1, bestnorm=bestnorm1)
+
+print, '-------------------------------------------------------'
+print, '*** Status:', status1
+print, format='("*** Normalization (erg/s): ", E0.2, " +/- ", E0.2)', par1[0]*1d39, perr1[0]*1d39
+print, format='("*** Start Time (MJD): ", F0.2, " +/- ", F0.2)', MJD0+par1[1], perr1[1]
+print, format='("***            (UTC): ", A0)', date_conv(par1[1] + MJD0 + 2400000.5d, 'F')
+print, format='("*** Decay time scale: ", F0.2, " +/- ", F0.2)', par1[2], perr1[2]
+print, format='("*** Chi^2/DoF: ", F0.1, " / ", I0)', bestnorm1, dof1
+
+;#################################################################
+
+if keyword_set(saveps) then begin
+	current_device = !d.name ; save current device
+	set_plot, 'ps'
+	epsname = 'ngc247nuc_lc.eps'
+	device, filename=epsname, /encapsulated
+endif
+
+; xr = [800, 1080]
+xr = [800, 1200]
+; xr = [650, 1200] ; including the first point in 2014-02 (Target ID 82125)
+yr = [0, 2.5]
+cs = 2
+fnt = 1
+co = [cgcolor('red'), cgcolor('orange'), cgcolor('dark green')]
+
+plot, xr, /nodata, charsize=cs, font=fnt, $
+	xstyle=1, xrange=xr, ystyle=1, yrange=yr, $
+	xmargin=[6, 2], ymargin=[3, 1], $
+	xtitle='MJD - 56000', ytitle='Luminosity (10!U39!N erg s!U-1!N)'
+
+; plot fitting results
+pxx = linscale(xr[0], xr[1], 100)
+pyy = powdecay(pxx, par)
+oplot, pxx, pyy, linestyle=2, color=cgcolor('royal blue')
+
+pyy1 = expdecay(pxx, par1)
+oplot, pxx, pyy1, linestyle=1, color=cgcolor('purple')
+; oplot, pxx, pyy1, linestyle=2, color=cgcolor('royal blue')
+
+xx = xrt_date - MJD0 ; MJD
+yy = xrt_flux[*, 0] * flux2lum
+y0 = xrt_flux[*, 1] * flux2lum
+y1 = xrt_flux[*, 2] * flux2lum
+
+plotsym, 0, /fill
+oplot, xx, yy, psym=8, color=co[1]
+for i = 0L, n_elements(y0) - 1L do begin
+	oplot, xx[i]*[1,1], [y0[i], y1[i]], color=co[1]
+	oplot, xx[i] + (xr[1] - xr[0])*5d-3*[-1,1], y0[i]*[1,1], color=co[1]
+	oplot, xx[i] + (xr[1] - xr[0])*5d-3*[-1,1], y1[i]*[1,1], color=co[1]
+endfor
+
+xx = xmm_date - MJD0
+yy = xmm_flux[0] * flux2lum
+y0 = xmm_flux[1] * flux2lum
+y1 = xmm_flux[2] * flux2lum
+plots, xx, yy, psym=8, color=co[0]
+oplot, xx*[1,1], [y0, y1], color=co[0]
+oplot, xx + (xr[1] - xr[0])*5d-3*[-1,1], y0*[1,1], color=co[0]
+oplot, xx + (xr[1] - xr[0])*5d-3*[-1,1], y1*[1,1], color=co[0]
+
+xx = cha_date - MJD0
+yy = cha_flux[0] * flux2lum
+y0 = cha_flux[1] * flux2lum
+y1 = cha_flux[2] * flux2lum
+plots, xx, yy, psym=8, color=co[2]
+oplot, xx*[1,1], [y0, y1], color=co[2]
+oplot, xx + (xr[1] - xr[0])*5d-3*[-1,1], y0*[1,1], color=co[2]
+oplot, xx + (xr[1] - xr[0])*5d-3*[-1,1], y1*[1,1], color=co[2]
+
+al_legend, ['XMM-Newton', 'Swift', 'Chandra'], psym=[8,8,8], color=co, $
+	charsize=cs, font=fnt, box=0, pos=[xr[0]+10, yr[0]+0.8]
+
+if keyword_set(saveps) then begin
+	device, /close
+	chepslinewidth, epsname, 40
+	set_plot, current_device
+endif
+
+stop
+
+end

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd ../data
+OBSID=`ls -d 00033469*`
+cd ../xrt_ulx
+
+for dir in $OBSID
+do
+	./specfit $dir
+done

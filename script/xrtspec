@@ -1,0 +1,108 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+	echo "Please input the sequence number of the observation!"
+	exit 0
+fi
+
+. /soft/heasoft/caldb/software/tools/caldbinit.sh
+export HEADAS=/soft/heasoft/heasoft-6.16/i686-pc-linux-gnu-libc2.11.1-0
+if [ ! -d $HEADAS ]
+then
+	export HEADAS=/soft/heasoft/heasoft-6.16/x86_64-apple-darwin13.2.0
+fi
+. $HEADAS/headas-init.sh
+
+# directory name, the sequence number
+SEQ=$1
+alias ls
+
+cd ../data
+DATAROOT=`pwd`
+cd ../xrt
+EVTDIR=${DATAROOT}/${SEQ}/xrt/event/
+EVT0=`ls ${EVTDIR}*xpcw3po_cl.evt.gz`
+EVT=$(basename "$EVT0")
+EXP=`ls ${DATAROOT}/${SEQ}/xrt/products/*ex.img.gz`
+SFILE=spec.xco
+
+# create a directory 
+if [ ! -d $SEQ ]
+then
+	mkdir $SEQ
+fi
+
+cd $SEQ
+
+fff=img_03_10.fits
+if [ -e $fff ]; then rm $fff; fi
+fff=nuc.pi
+if [ -e $fff ]; then rm $fff; fi
+fff=nuc.rmf
+if [ -e $fff ]; then rm $fff; fi
+fff=nuc_bkg.pi
+if [ -e $fff ]; then rm $fff; fi
+fff=nuc.arf
+if [ -e $fff ]; then rm $fff; fi
+fff=nuc_bp.xcm
+if [ -e $fff ]; then rm $fff; fi
+
+echo "
+read event
+${EVTDIR}
+${EVT}
+yes
+filter pha 30 1000
+extract image
+save image img_03_10.fits
+filter region ../nuc_wcs.reg
+extract spectrum
+save spectrum nuc.pi
+clear region
+filter region ../nuc_bkg_wcs.reg
+extract spectrum
+save spectrum nuc_bkg.pi
+exit
+no" > $SFILE
+
+xselect @$SFILE
+
+pset xrtmkarf outfile=nuc.arf
+pset xrtmkarf expofile=$EXP
+pset xrtmkarf phafile=nuc.pi
+pset xrtmkarf psfflag=yes
+pset xrtmkarf srcx=-1
+pset xrtmkarf srcy=-1
+pset xrtmkarf clobber=yes
+xrtmkarf mode=h > xrtmkarf.log
+
+# xrtmkarf outfile=nuc.arf expofile=$EXP phafile=nuc.pi psfflag=yes srcx=-1 srcy=-1 clobber=yes > xrtmkarf.log
+
+RMF=`grep rmf xrtmkarf.log | awk '{print $4}' | cut -d \' -f2`
+
+ln -sf $RMF nuc.rmf
+
+# 	group min 1 & \
+grppha nuc.pi \!bin_nuc.pi \
+	comm="bad 0-29 & \
+	bad 1000-1023 & \
+	group 30 199 170 & \
+	group 200 999 800 & \
+	chkey BACKFILE nuc_bkg.pi & \
+	chkey RESPFILE nuc.rmf & \
+	chkey ANCRFILE nuc.arf & \
+	exit"
+
+DATE0=`fkeyprint nuc.pi[0] date-obs | grep Start | cut -d \' -f2`
+DATE1=`fkeyprint nuc.pi[0] date-end | grep End | cut -d \' -f2`
+echo -n $DATE0" " $DATE1" " > flux.txt
+
+xspec - ../nuc_bp_input
+
+if [ -d /soft/exelis ]
+then
+	/soft/exelis/idl/bin/idl -e @../fout.pro
+else
+	/Applications/exelis/idl/bin/idl -e  @../fout.pro
+fi

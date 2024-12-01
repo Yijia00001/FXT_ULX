@@ -1,0 +1,36 @@
+statistic cstat
+data 1:1 bin_ulx.pi
+ignore bad
+
+model  TBabs*bbodyrad
+           0.4      -0.001          0          0     100000      1e+06
+       0.15        0.01     0.0001      0.001        100        200
+        700       0.01          0          0      1e+20      1e+24
+
+query yes
+fit
+err 1.0 2 3
+
+tclout param 2
+set x [string trim $xspec_tclout]
+set pos [string first { } $x]
+set cf [string range $x 0 [expr $pos]]
+
+tclout error 2
+set cfe [string trim $xspec_tclout]
+scan $cfe "%f %f" e1 e2
+echo '$cf $e1 $e2' >> fit.txt
+
+tclout param 3
+set x [string trim $xspec_tclout]
+set pos [string first { } $x]
+set cf [string range $x 0 [expr $pos]]
+
+tclout error 3
+set cfe [string trim $xspec_tclout]
+scan $cfe "%f %f" e1 e2
+echo '$cf $e1 $e2' >> fit.txt
+
+
+save all ulx_bb
+exit

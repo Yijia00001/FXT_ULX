@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+OBSID=`ls -d 00033469*`
+
+for dir in $OBSID
+do
+	cd $dir
+	
+	xspec - ../refit_bb
+	
+	cd ..
+done

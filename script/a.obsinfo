@@ -1,0 +1,59 @@
+#!/bin/bash
+# This script is to list the information of all ObsIDs under a directory
+# please run ciao -o to override the commands in HEASOFT, e.g., for pget
+
+SRCID=$1 # input the object name
+
+DATADIR=/data/chandra
+OBSIDs=`ls $DATADIR/${SRCID}`
+
+for OBSID in ${OBSIDs};
+do
+	OBSDIR=$DATADIR/$SRCID/$OBSID
+	OIF=`ls $OBSDIR/oif.fits`
+	INST=`dmkeypar $OIF INSTRUME echo+`
+	CCD=`dmkeypar $OIF DETNAM echo+`
+	GRAT=`dmkeypar $OIF GRATING echo+`
+	EXPOSURE=`dmkeypar $OIF EXPOSURE echo+`
+	
+	#to determine if the object of intest is in the FOV
+	EVT2FILE=`ls $OBSDIR/primary/*evt2*`
+	ASOLFILE=`ls $OBSDIR/primary/*asol1*`
+	
+	# number of sources in the galaxy
+	n_src=`grep . $SRCID/ssulx_coords.txt | wc -l`
+
+	echo -n $OBSID $INST $CCD $GRAT $EXPOSURE " "
+	
+	# get the CCD_ID for each source
+	for i_src in `seq 1 $n_src`
+	do
+		COORDS=`head -$i_src $SRCID/ssulx_coords.txt | tail -1` # get the RA DEC
+		RA=`echo $COORDS | cut -d ' ' -f1`
+		DEC=`echo $COORDS | cut -d ' ' -f2`
+		
+		punlearn dmcoords
+		dmcoords $EVT2FILE asol=none option=cel celfmt=deg ra=$RA dec=$DEC 
+		CCD_ID=`pget dmcoords chip_id`
+		
+		#echo $RA $DEC $CCD_ID
+		
+		if [[ $CCD =~ ^ACIS-[0-9]*${CCD_ID}[0-9]* ]] # regexp
+		then
+			NOTE=" | chip $CCD_ID " # if matched
+		else
+			NOTE=" | Not in FOV " # if not matched
+		fi
+		
+		if [[ $CCD =~ ^HRC.* ]] # regexp
+		then
+			NOTE=" | Not ACIS " # if matched
+		fi
+		
+		echo -n $NOTE
+
+	done
+	
+
+	echo ''
+done

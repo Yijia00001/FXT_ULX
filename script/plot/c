@@ -1,0 +1,8 @@
+gs \
+  -o fit.pdf \
+  -sDEVICE=pdfwrite \
+  -dPDFSETTINGS=/prepress \
+  -dDEVICEWIDTHPOINTS=602  \
+  -dDEVICEHEIGHTPOINTS=750 \
+  -dPDFFitPage \
+  ../00033469*/pgplot.ps

@@ -1,0 +1,196 @@
+function powdecay, xx, pp
+; to fit a power-law decay function
+; pp[0]: normalization
+; pp[1]: start time
+; pp[2]: power-law index
+
+return, pp[0] * (xx - pp[1]) ^ pp[2]
+
+end
+
+
+;#########################################################################
+;#########################################################################
+;#########################################################################
+
+pro prate, saveps=saveps
+; find net count rate and scale it to intrinsic luminosity
+
+files = file_search('./*/nuc.pi')
+
+n_obs = n_elements(files)
+date = dblarr(n_obs)
+rate = dblarr(n_obs)
+rate_err = dblarr(n_obs)
+
+; first load the RMF file and get channel range for 0.3-10 keV
+; 0.3-10 keV: 30-999 (start from 0) or 31-1000 (natural row number)
+; checked that all RMF files are the same
+
+for i = 0L, n_obs - 1L do begin
+	fsrc = files[i]
+	dir = file_dirname(fsrc)
+	fbkg = dir + '/nuc_bkg.pi'
+	
+	dsrc = mrdfits(fsrc, 1, shdr, /silent)
+	dbkg = mrdfits(fbkg, 1, bhdr, /silent)
+	exptime = sxpar(shdr, 'EXPOSURE')
+	
+	scales = sxpar(shdr, 'BACKSCAL')
+	scaleb = sxpar(bhdr, 'BACKSCAL')
+	f = scales / scaleb
+	
+	csrc = total((dsrc.counts)[30:999])
+	cbkg = total((dbkg.counts)[30:999])
+	
+	rate[i, 0] = (csrc - cbkg * f) / exptime
+	var = csrc + cbkg * f^2d
+	print, 'SRC, BKG:', csrc, cbkg, cbkg * f, cbkg * f / csrc
+	; print, 'Variance:', csrc, cbkg * f^2d
+	; mu = poiss_ci(var, sigma = 1)
+	; rate[i, 1:2] = mu
+	rate_err[i] = sqrt(csrc + cbkg * f^2d) / exptime
+	
+	; get MJD at the mid-point of the observation
+	date0 = sxpar(shdr, 'DATE-OBS')
+	date1 = sxpar(shdr, 'DATE-END')
+	date[i] = (date_conv(date0, 'MODIFIED') + date_conv(date1, 'MODIFIED')) / 2d
+endfor
+
+if keyword_set(saveps) then begin
+	current_device = !d.name ; save current device
+	set_plot, 'ps'
+	epsname = 'ngc247nuc_lc1.eps'
+	device, filename=epsname, /encapsulated
+endif
+
+; convert from counts/s to erg/cm2/s
+rate2flux = 1.208d-12 / 1.85997d-02
+; convert from counts/s to intrinsic erg/s
+rate2lum = 1.4346d-12 / 1.85997d-02 * f2l(3.4d)
+
+; flux = rate * rate2flux
+; flux_err = rate_err * rate2flux
+flux = rate * rate2lum
+flux_err = rate_err * rate2lum
+
+; xr = [0, date[-1] - date[0] + 7] + round((date[0] - 56000)/10.0)*10
+xr = [800, 1200] ; [800, 1080]
+xr = [650, 1200]; include the first point
+yr = [0, 3.1]
+cs = 2
+fnt = 1
+co = [cgcolor('red'), cgcolor('orange'), cgcolor('dark green')]
+
+plot, xr, /nodata, charsize=cs, font=fnt, $
+	xstyle=1, xrange=xr, ystyle=1, yrange=yr, $
+	xmargin=[6, 2], ymargin=[3, 1], $
+	xtitle='MJD - 56000', ytitle='Luminosity (10!U39!N erg s!U-1!N)'
+
+xx = date - 56000 ; MJD
+yy = flux * 1d-39
+yerr = flux_err * 1d-39
+y0 = yy - yerr
+y1 = yy + yerr
+plotsym, 0, /fill
+oplot, xx, yy, psym=8, color=co[1]
+; oploterror, xx, yy, (y1 - y0) / 2d, psym=1, color=co[1]
+
+for i = 0L, n_elements(y0) - 1L do begin
+	oplot, xx[i]*[1,1], [y0[i], y1[i]], color=co[1]
+	oplot, xx[i] + (xr[1] - xr[0])*5d-3*[-1,1], y0[i]*[1,1], color=co[1]
+	oplot, xx[i] + (xr[1] - xr[0])*5d-3*[-1,1], y1[i]*[1,1], color=co[1]
+endfor
+
+; stop
+
+; add XMM and Chandra points
+; flux corrected for absorption, err 1.0 6
+xmm_flux = 10d ^ [-11.8433, -11.8523, -11.8343] * f2l(3.4d)
+; DATE-OBS= '2014-07-01T05:01:03' / Start Time (UTC) of exposure
+; DATE-END= '2014-07-01T14:24:10' / End Time (UTC) of exposure
+xmm_date = (date_conv('2014-07-01T05:01:03', 'MODIFIED') + $
+				date_conv('2014-07-01T14:24:10', 'MODIFIED')) / 2d
+
+xx = xmm_date - 56000
+yy = xmm_flux[0] * 1d-39
+y0 = xmm_flux[1] * 1d-39
+y1 = xmm_flux[2] * 1d-39
+plots, xx, yy, psym=8, color=co[0]
+oplot, xx*[1,1], [y0, y1], color=co[0]
+oplot, xx + (xr[1] - xr[0])*5d-3*[-1,1], y0*[1,1], color=co[0]
+oplot, xx + (xr[1] - xr[0])*5d-3*[-1,1], y1*[1,1], color=co[0]
+
+; nuc_po.xcm err 1.0 5
+; -11.7468 -11.7899 -11.6944
+; nuc_bp.xcm, err 1.0 5
+; -11.8443 -11.8739 -11.816
+cha_flux = 10d ^ [-11.8443, -11.8739, -11.816] * f2l(3.4d)
+; DATE-OBS= '2014-11-12T05:34:48' / Observation start date
+; DATE-END= '2014-11-12T07:30:13' / Observation end date
+cha_date = (date_conv('2014-11-12T05:34:48', 'MODIFIED') + $
+				date_conv('2014-11-12T07:30:13', 'MODIFIED')) / 2d
+
+xx = cha_date - 56000
+yy = cha_flux[0] * 1d-39
+y0 = cha_flux[1] * 1d-39
+y1 = cha_flux[2] * 1d-39
+plots, xx, yy, psym=8, color=co[2]
+oplot, xx*[1,1], [y0, y1], color=co[2]
+oplot, xx + (xr[1] - xr[0])*5d-3*[-1,1], y0*[1,1], color=co[2]
+oplot, xx + (xr[1] - xr[0])*5d-3*[-1,1], y1*[1,1], color=co[2]
+
+; fit a power-law decay function
+fx = [xmm_date, cha_date, date] - 56000
+fy = [xmm_flux[0], cha_flux[0], flux] * 1d-39
+ferr = [xmm_flux[2]-xmm_flux[1], cha_flux[2]-cha_flux[1], flux_err] ; errors
+; q = where(fx ge 900 and (fx le 960 or fx ge 975)) ; without XMM 
+q = where(fx le 960 or fx ge 975) ; XMM + XRT (no flares)
+; q = where(fx gt 0) ; all data
+
+parinfo = replicate({value:0d, fixed:0, limited:[0,0], limits:[0,0d], step:0d}, 3)
+parinfo[0].value = 5000.0
+parinfo[1].limited = 1
+parinfo[1].limits = [-1d5, fx[0]]
+parinfo[1].value = 700.0
+parinfo[2].fixed = 1 ; fix the powerlaw index
+parinfo[2].value = -5d / 3d
+
+par = mpfitfun('powdecay', fx[q], fy[q], ferr[q], $
+	parinfo=parinfo, perror=perr, yfit=yfit, /quiet, $
+	nfev=nfev, niter=niter, status=status, dof=dof, bestnorm=bestnorm)
+
+pxx = linscale(xr[0], xr[1], 100)
+pyy = powdecay(pxx, par)
+; oploterr, fx[q], fy[q], ferr[q]
+oplot, pxx, pyy, linestyle=2, color=cgcolor('royal blue')
+print, '-------------------------------------------------------'
+print, '*** Status:', status
+if parinfo[2].fixed eq 1 then strfix = 'Fixed' else strfix = 'Not fixed'
+print, '*** ' + strfix + ' at the TDE nominal decay index: -5/3 (-1.67)'
+print, format='("*** Normalization (erg/s): ", E0.2, " +/- ", E0.2)', par[0]*1d39, perr[0]*1d39
+print, format='("*** Start Time (MJD): ", F0.2, " +/- ", F0.2)', par[1], perr[1]
+print, format='("***            (UTC): ", A0)', date_conv(par[1] + 56000d + 2400000.5d, 'F')
+print, format='("*** Decay poewr-law index: ", F0.2, " +/- ", F0.2)', par[2], perr[2]
+
+print, format='("*** Chi^2/DoF: ", F0.1, " / ", I0)', bestnorm, dof
+
+al_legend, ['XMM-Newton', 'Swift', 'Chandra'], psym=[8,8,8], color=co, $
+	charsize=cs, font=fnt, /bottom, box=0
+
+if keyword_set(saveps) then begin
+	device, /close
+	chepslinewidth, epsname, 40
+	set_plot, current_device
+endif
+
+; print, '------------------- XMM-Newton ----------------------'
+; print, '2014-07-01T05:01:03', xmm_flux, $
+; 		format='(A, E10.2, "  (", E8.2, " - ", E8.2, ")")'	
+; print, '-------------------- Chandra ------------------------'
+; print, '2014-11-12T05:34:48', cha_flux, $
+; 		format='(A, E10.2, "  (", E8.2, " - ", E8.2, ")")'	
+
+stop
+
+end

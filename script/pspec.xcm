@@ -1,0 +1,11 @@
+@ulx_bb
+
+query yes
+fit
+
+cpd /vps
+setplot en
+
+plot ld ra
+exit
+

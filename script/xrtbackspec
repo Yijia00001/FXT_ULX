@@ -1,0 +1,53 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+	echo "Please input the sequence number of the observation!"
+	exit 0
+fi
+
+. /soft/heasoft/caldb/software/tools/caldbinit.sh
+export HEADAS=/soft/heasoft/heasoft-6.16/i686-pc-linux-gnu-libc2.11.1-0
+if [ ! -d $HEADAS ]
+then
+	export HEADAS=/soft/heasoft/heasoft-6.16/x86_64-apple-darwin13.2.0
+fi
+. $HEADAS/headas-init.sh
+
+# directory name, the sequence number
+SEQ=$1
+alias ls
+
+cd ../data
+DATAROOT=`pwd`
+cd ../xrt_ulx
+EVTDIR=${DATAROOT}/${SEQ}/xrt/event/
+EVT0=`ls ${EVTDIR}*xpcw3po_cl.evt.gz`
+EVT=$(basename "$EVT0")
+EXP=`ls ${DATAROOT}/${SEQ}/xrt/products/*ex.img.gz`
+SFILE=backspec.xco
+
+# create a directory 
+if [ ! -d $SEQ ]
+then
+	mkdir $SEQ
+fi
+
+cd $SEQ
+
+fff=ulx_bkg.pi
+if [ -e $fff ]; then rm $fff; fi
+
+echo "
+read event
+${EVTDIR}
+${EVT}
+yes
+filter pha 30 1000
+filter region ../ulx_bkg_wcs.reg
+extract spectrum
+save spectrum ulx_bkg.pi
+exit
+no" > $SFILE
+
+xselect @$SFILE

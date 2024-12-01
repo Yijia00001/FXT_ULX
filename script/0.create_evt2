@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# current directory name
+srcid=${PWD##*/}
+
+obsids=`ls /data/chandra/${srcid}`
+
+for obsid in ${obsids};
+do
+	echo Processing ObsID $obsid ...
+	
+	# create a directory
+	if [ ! -d $obsid ]
+	then
+   	mkdir $obsid
+	fi
+	
+	cd $obsid
+	
+	# create evt directory
+	if [ ! -d evt ]
+	then
+   	mkdir evt
+	fi
+	
+	cd evt
+	
+	# re-create EVT2 files
+	if [ ! -e evt2.fits ]
+	then
+		chandra_repro indir=/data/chandra/${srcid}/${obsid} outdir=.
+		
+		ls *repro_evt2* | xargs -I{} ln -s {} evt2.fits
+		ls *repro_bpix1* | xargs -I{} ln -s {} bpix1.fits
+		ls *pbk0* | xargs -I{} ln -s {} pbk0.fits
+		ls *msk1* | xargs -I{} ln -s {} msk1.fits
+		ls *mtl1* | xargs -I{} ln -s {} mtl1.fits
+	fi
+
+	# return to obsid directory
+	cd ..
+
+	# return to the root directory
+	cd ..
+	
+done
+
+
+###############################################

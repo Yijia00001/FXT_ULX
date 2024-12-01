@@ -1,0 +1,44 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+	echo "Please input the sequence number of the observation!"
+	exit 0
+fi
+
+. /soft/heasoft/caldb/software/tools/caldbinit.sh
+export HEADAS=/soft/heasoft/heasoft-6.16/i686-pc-linux-gnu-libc2.11.1-0
+if [ ! -d $HEADAS ]
+then
+	export HEADAS=/soft/heasoft/heasoft-6.16/x86_64-apple-darwin13.2.0
+fi
+. $HEADAS/headas-init.sh
+
+# directory name, the sequence number
+SEQ=$1
+
+cd $SEQ
+
+# 	group min 1 & \
+grppha ulx.pi \!bin_ulx.pi \
+	comm="bad 0-29 & \
+	bad 200-1023 & \
+	group 30 69 40 & \
+	group 70 84 15 & \
+	group 85 99 15 & \
+	group 100 129 30 & \
+	group 130 199 70 & \
+	chkey BACKFILE ulx_bkg.pi & \
+	chkey RESPFILE ulx.rmf & \
+	chkey ANCRFILE ulx.arf & \
+	exit"
+
+DATE0=`fkeyprint ulx.pi[0] date-obs | grep Start | cut -d \' -f2`
+DATE1=`fkeyprint ulx.pi[0] date-end | grep End | cut -d \' -f2`
+
+if [ -e fit.txt ]; then rm fit.txt; fi
+echo $DATE0" " $DATE1" " > fit.txt
+
+xspec - ../ulx_bb_input
+
+cd ..

@@ -1,0 +1,16 @@
+@ulx_bb
+
+query yes
+fit
+
+tclout stat
+set cstat [string trim $xspec_tclout]
+
+tclout dof
+set dofpha [string trim $xspec_tclout]
+
+echo $cstat $dofpha >> fit.txt
+
+rm ulx_bb.xcm
+save all ulx_bb
+exit

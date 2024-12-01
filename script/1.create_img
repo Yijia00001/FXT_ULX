@@ -1,0 +1,74 @@
+#!/bin/bash
+
+# number of sources in the galaxy
+n_src=`grep . ssulx_coords.txt | wc -l`
+
+obsids=`ls -d [0-9][0-9][0-9]* `
+
+for obsid in ${obsids};
+do
+	echo Processing ObsID $obsid ...
+	
+	cd $obsid
+	
+	# make instrument maps
+	make_instmap_weights weight.txt "xswabs.gal*powlaw1d.pl" \
+		paramvals="gal.nh=0.01;pl.gamma=1.7" emin=0.3 emax=8.0 ewidth=0.1 clobber=yes
+
+
+	# determine the ccd_id on which the sources are located
+	
+	# get the CCD_ID for each source
+	CCD_ID=''
+	for i_src in `seq 1 $n_src`
+	do
+		COORDS=`head -$i_src ../ssulx_coords.txt | tail -1` # get the RA DEC
+		RA=`echo $COORDS | cut -d ' ' -f1`
+		DEC=`echo $COORDS | cut -d ' ' -f2`
+		
+		punlearn dmcoords
+		dmcoords evt/evt2.fits asol=none option=cel celfmt=deg ra=$RA dec=$DEC
+		CCD_ID=${CCD_ID}`pget dmcoords chip_id`
+	done
+	
+	# check and remove duplicated CCD_IDs
+	echo $CCD_ID | grep -o . | sort | tr -d "\n"  | tr -s 0-9
+	
+	# create image, exposure maps and source detection for each CCD
+	
+	for iCCD in `echo $CCD_ID | grep -o .`
+	do	
+		# create evt files for the whole CCD chip
+		punlearn dmcopy
+		dmcopy "evt/evt2.fits[ccd_id=$iCCD]" ccd${iCCD}.evt clobber=yes
+			
+		# create images and exposure maps
+		fluximage "evt/evt2.fits[ccd_id=$iCCD]" ccd${iCCD} binsize=1 bands=weight.txt clobber=yes
+
+		# create PSF sizes
+		mkpsfmap ccd${iCCD}_band1_thresh.img outfile=ccd${iCCD}_psfmap.fits energy=1 ecf=0.9 clobber=yes
+	
+		punlearn wavdetect
+		pset wavdetect clobber=yes
+		pset wavdetect verbose=2
+		pset wavdetect infile=ccd${iCCD}_band1_thresh.img
+		pset wavdetect psffile=ccd${iCCD}_psfmap.fits
+		pset wavdetect expfile=ccd${iCCD}_band1_thresh.expmap
+		pset wavdetect outfile=wav_ccd${iCCD}_src.fits
+		pset wavdetect scellfile=wav_ccd${iCCD}_cell.fits
+		pset wavdetect imagefile=wav_ccd${iCCD}_recon.fits
+		pset wavdetect defnbkgfile=wav_ccd${iCCD}_bkg.fits
+		pset wavdetect regfile=wav_ccd${iCCD}.reg
+		pset wavdetect ellsigma=3.0
+		pset wavdetect scales="1 2 4 8 16"
+		pset wavdetect sigthresh=1e-6
+		wavdetect mode=h
+	done
+
+	# return to the root directory
+	cd ..
+	
+done
+
+
+###############################################

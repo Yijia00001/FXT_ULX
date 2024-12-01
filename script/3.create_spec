@@ -1,0 +1,63 @@
+#!/bin/bash
+
+obsids=`ls -d [0-9][0-9][0-9]* `
+
+for obsid in ${obsids};
+do
+	echo Processing ObsID $obsid ...
+	
+	cd $obsid
+	
+	if [ -e ulx1.reg ] 
+	then 
+	
+		for sreg in `ls ulx?.reg`;
+		do
+		
+			regbase=`echo $sreg | cut -d '.' -f1`
+			
+			breg=${regbase}_bkg.reg
+			if [ ! -e ../${breg} ]
+			then
+				echo "Please create background region files -- exit"
+				exit 1
+			fi
+		
+			dmcopy "evt/evt2.fits[sky=region(${sreg})]" ${regbase}.evt clobber=yes
+			dmcopy "ccd7_gti.evt[sky=region(${sreg})]" ${regbase}_gti.evt clobber=yes
+	
+			fasol=`ls evt/*asol1.lis`
+		
+			punlearn specextract
+			pset specextract outroot=${regbase}
+			pset specextract infile="evt/evt2.fits[sky=region(${sreg})]"
+			pset specextract bkgfile="evt/evt2.fits[sky=region(../${breg})]"
+			pset specextract asp=@${fasol}
+			pset specextract mskfile=evt/msk1.fits
+			pset specextract badpixfile=evt/bpix1.fits
+			pset specextract weight=no
+			pset specextract correctpsf=yes
+			pset specextract grouptype=NUM_CTS binspec=25
+			specextract verbose=2 clobber=yes mode=h
+		
+			punlearn specextract
+			pset specextract outroot=${regbase}_gti
+			pset specextract infile="ccd7_gti.evt[sky=region(${sreg})]"
+			pset specextract bkgfile="ccd7_gti.evt[sky=region(../${breg})]"
+			pset specextract asp=@${fasol}
+			pset specextract mskfile=evt/msk1.fits
+			pset specextract badpixfile=evt/bpix1.fits
+			pset specextract weight=no
+			pset specextract correctpsf=yes
+			pset specextract grouptype=NUM_CTS binspec=25
+			specextract verbose=2 clobber=yes mode=h
+		done
+	fi
+	
+	# return to the root directory
+	cd ..
+	
+done
+
+
+###############################################
