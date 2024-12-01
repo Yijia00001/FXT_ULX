@@ -1,0 +1,14 @@
+
+
+read events ../../fxt/products/fxt_a_11908406531_ff_01_po_cl_3bb.fits
+.
+yes
+filter region ../x1.reg
+extract spectrum
+save spectrum x1.pi clobber=yes
+clear region
+filter region ../bkg.reg
+extract spectrum
+save spectrum bkg.pi clobber=yes
+exit
+no
