@@ -51,7 +51,6 @@ for source_name in source_name_list:
     ax_NH = fig.add_subplot(gs[5, :])
 
     for i in range(len(obsid_list_target)):
-        print(np.array(source_info[obsid_list_target[i]])[source_name_list==source_name][0])
         source_obs_id = np.array(source_info[obsid_list_target[i]])[source_name_list==source_name][0]
 
         source0, ra_axis0, dec_axis0, angle0  = get_coord_wcs('data/' + obsid_list_target[i] + '/a/' + source_obs_id + '.reg')
@@ -95,6 +94,10 @@ for source_name in source_name_list:
 
         ## plot the fitting results
 
+        fit_img_path = 'data/' + obsid_list_target[i] + '/fit_image/' + source_obs_id + '.png'
+        if not os.path.exists(fit_img_path):
+            continue
+
         fit_result_file = 'data/' + obsid_list_target[i] + '/' + source_obs_id + '_fit_results.csv'
         fit_result = pd.read_csv(fit_result_file)
         para = np.array(fit_result['para'])
@@ -102,16 +105,14 @@ for source_name in source_name_list:
         value_down = np.array(fit_result['value_down'])
         value_up = np.array(fit_result['value_up'])
 
-        fit_img_path = 'data/' + obsid_list_target[i] + '/fit_image/' + source_obs_id + '.png'
-        if not os.path.exists(fit_img_path):
-            continue
-
         t0 = Time(hdr['DATE-OBS'], format='isot', scale='utc')
         fitting_result = mpimg.imread(fit_img_path)
         ax_fitting = fig.add_subplot(gs[1:3, 2*i:(2*i+2)])
         ax_fitting.imshow(fitting_result, aspect='auto')
         ax_fitting.set_xticks([])
         ax_fitting.set_yticks([])
+        print(obsid_list_target[i])
+        print(np.array(source_info[obsid_list_target[i]])[source_name_list==source_name][0])
         ax_fitting.set_title(r'$\rm \chi^2/dof$ ' + format(value[para=='dof'][0], '.1f') + '/' + str(int(value_up[para=='dof'][0])), fontsize=20)
 
         ax_flux.plot([t0.mjd, t0.mjd], [value_down[para=='Flux'][0], value_up[para=='Flux'][0]], color='blue')
