@@ -32,5 +32,6 @@ source_dic = {\
 'NGC1316_X5': SkyCoord(ra=50.7134966484313*u.degree, dec=-37.1635953695803*u.degree, frame='icrs'),\
 'NGC1316_X6': SkyCoord(ra=50.773866178381*u.degree, dec=-37.1864054985313*u.degree, frame='icrs'),\
 'NGC55_X1': SkyCoord(ra=3.870375*u.degree, dec=-39.2218889*u.degree, frame='icrs'),\
+'NGC55_X2': SkyCoord(ra=3.7778257*u.degree, dec=-39.2430267*u.degree, frame='icrs'),\
 'NGC1313_X0': SkyCoord(ra=49.5916667*u.degree, dec=-66.6011944*u.degree, frame='icrs'),\
 }

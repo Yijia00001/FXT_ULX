@@ -34,3 +34,13 @@ python3 gen_source_list.py
 ## fit the spectrum of sources in source_list.txt
 . 5.fit_spec
 
+## plot the results of ULXs
+python3 plot_ULX.py
+
+## generate the ref sources from CSC and sxps
+python3 gen_csc_list.py
+python3 gen_sxps_list.py
+
+## plot the whole images of each galaxy
+python3 plot_gal_img.py
+

@@ -38,6 +38,7 @@ with open('ULX_list.py', 'w') as f:
                 print(name_ULX[i], Lpeak_2SXPS[i], Lpeak_4XMM[i])
     
     f.write('\'NGC55_X1\': SkyCoord(ra=3.870375*u.degree, dec=-39.2218889*u.degree, frame=\'icrs\'),\\\n')
+    f.write('\'NGC55_X2\': SkyCoord(ra=3.7778257*u.degree, dec=-39.2430267*u.degree, frame=\'icrs\'),\\\n')
     f.write('\'NGC1313_X0\': SkyCoord(ra=49.5916667*u.degree, dec=-66.6011944*u.degree, frame=\'icrs\'),\\\n')
     f.write('}\n')
 
