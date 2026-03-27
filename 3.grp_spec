@@ -3,35 +3,37 @@
 
 cat obsid_list.txt | while read line;
 do
-    if [ `grep -c "$line" finish.txt` -ne '0' ]; then
-        continue
-    fi
-    
+    # if [ `grep -c "$line" finish.txt` -ne '0' ]; then
+    #     continue
+    # fi
     cd data/$line
     pwd
+    cd bkg_spec
+    grppha infile=bkg_a.pi outfile=bkg_a_grp.pi chatter=0 comm=" group min 3 & chkey RESPFILE bkg_a.rmf & chkey ANCRFILE bkg_a.arf & exit" clobber=yes
+    cd ..
     inst_list=("a" "b")
     for inst in ${inst_list[@]};
     do
-        cd ${inst}
-        evt_file=`ls ../fxt/products/*_${inst}_*`
+        #cd ${inst}
+        evt_file=`ls ../fxt/products/*fxt_${inst}_*`
         # img_file=$inst.img
 
-        source_num=`ls x*.reg | wc -l`
+        source_num=`ls ${inst}/x*.reg | wc -l`
         source_index=1
         while [ $source_index -le ${source_num} ]
         do
-            mkdir x${source_index}
+            #mkdir x${source_index}
             cd x${source_index}
-
-            grppha infile=x${source_index}.pi outfile=x${source_index}_grp.pi chatter=0 \
-            comm=" group x${source_index}.grp & chkey RESPFILE x${source_index}.rmf & chkey ANCRFILE x${source_index}.arf \
-            & chkey BACKFILE bkg.pi & exit" clobber=yes
+            grppha infile=x${source_index}_${inst}.pi outfile=x${source_index}_${inst}_grp.pi chatter=0 \
+            comm=" group x${source_index}_${inst}.grp & chkey RESPFILE x${source_index}_${inst}.rmf & chkey ANCRFILE x${source_index}_${inst}.arf \
+            & chkey BACKFILE bkg_${inst}.pi & exit" clobber=yes
             #break 1
             cd ..
+
             let source_index++
         done
         #break 1
-        cd ..
+        #cd ..
     done
     cd ../..
     #break 1
