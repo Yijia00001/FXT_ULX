@@ -1,0 +1,3947 @@
+## The script to fit FXT spec files for all observations
+
+cp fit_spec.py data/06800000126/x19
+cd data/06800000126/x19
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x27
+cd data/06800000126/x27
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x10
+cd data/06800000126/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x7
+cd data/06800000126/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x8
+cd data/06800000126/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x24
+cd data/06800000126/x24
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x18
+cd data/06800000126/x18
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x28
+cd data/06800000126/x28
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x13
+cd data/06800000126/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x26
+cd data/06800000126/x26
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x1
+cd data/06800000126/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x21
+cd data/06800000126/x21
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x22
+cd data/06800000126/x22
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x3
+cd data/06800000126/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x25
+cd data/06800000126/x25
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x11
+cd data/06800000126/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x16
+cd data/06800000126/x16
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x15
+cd data/06800000126/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x9
+cd data/06800000126/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x6
+cd data/06800000126/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x17
+cd data/06800000126/x17
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x23
+cd data/06800000126/x23
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x14
+cd data/06800000126/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x12
+cd data/06800000126/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x20
+cd data/06800000126/x20
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x4
+cd data/06800000126/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x2
+cd data/06800000126/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000126/x5
+cd data/06800000126/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x10
+cd data/06800000138/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x7
+cd data/06800000138/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x8
+cd data/06800000138/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x13
+cd data/06800000138/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x1
+cd data/06800000138/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x3
+cd data/06800000138/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x11
+cd data/06800000138/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x16
+cd data/06800000138/x16
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x15
+cd data/06800000138/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x9
+cd data/06800000138/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x6
+cd data/06800000138/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x17
+cd data/06800000138/x17
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x14
+cd data/06800000138/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x12
+cd data/06800000138/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x4
+cd data/06800000138/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x2
+cd data/06800000138/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000138/x5
+cd data/06800000138/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x10
+cd data/06800000145/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x7
+cd data/06800000145/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x8
+cd data/06800000145/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x13
+cd data/06800000145/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x1
+cd data/06800000145/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x3
+cd data/06800000145/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x11
+cd data/06800000145/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x15
+cd data/06800000145/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x9
+cd data/06800000145/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x6
+cd data/06800000145/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x14
+cd data/06800000145/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x12
+cd data/06800000145/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x4
+cd data/06800000145/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x2
+cd data/06800000145/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/06800000145/x5
+cd data/06800000145/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900030081/x7
+cd data/11900030081/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900030081/x1
+cd data/11900030081/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900030081/x3
+cd data/11900030081/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900030081/x6
+cd data/11900030081/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900030081/x4
+cd data/11900030081/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900030081/x2
+cd data/11900030081/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900030081/x5
+cd data/11900030081/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900043522/x1
+cd data/11900043522/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900043522/x2
+cd data/11900043522/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900135809/x1
+cd data/11900135809/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900135809/x2
+cd data/11900135809/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900168705/x1
+cd data/11900168705/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900168705/x3
+cd data/11900168705/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900168705/x4
+cd data/11900168705/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900168705/x2
+cd data/11900168705/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900168705/x5
+cd data/11900168705/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900177153/x1
+cd data/11900177153/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900177153/x3
+cd data/11900177153/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900177153/x4
+cd data/11900177153/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900177153/x2
+cd data/11900177153/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900177154/x1
+cd data/11900177154/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900213377/x1
+cd data/11900213377/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900213377/x2
+cd data/11900213377/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x10
+cd data/11900275201/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x7
+cd data/11900275201/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x8
+cd data/11900275201/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x1
+cd data/11900275201/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x3
+cd data/11900275201/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x9
+cd data/11900275201/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x6
+cd data/11900275201/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x4
+cd data/11900275201/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x2
+cd data/11900275201/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900275201/x5
+cd data/11900275201/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900279553/x1
+cd data/11900279553/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900279553/x3
+cd data/11900279553/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900279553/x4
+cd data/11900279553/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900279553/x2
+cd data/11900279553/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282369/x1
+cd data/11900282369/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282369/x3
+cd data/11900282369/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282369/x2
+cd data/11900282369/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282497/x7
+cd data/11900282497/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282497/x8
+cd data/11900282497/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282497/x1
+cd data/11900282497/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282497/x3
+cd data/11900282497/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282497/x9
+cd data/11900282497/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282497/x6
+cd data/11900282497/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282497/x4
+cd data/11900282497/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282497/x2
+cd data/11900282497/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900282497/x5
+cd data/11900282497/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900284674/x1
+cd data/11900284674/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900284674/x3
+cd data/11900284674/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900284674/x4
+cd data/11900284674/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900284674/x2
+cd data/11900284674/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291073/x1
+cd data/11900291073/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291073/x3
+cd data/11900291073/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291073/x6
+cd data/11900291073/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291073/x4
+cd data/11900291073/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291073/x2
+cd data/11900291073/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291073/x5
+cd data/11900291073/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x10
+cd data/11900291585/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x7
+cd data/11900291585/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x8
+cd data/11900291585/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x1
+cd data/11900291585/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x3
+cd data/11900291585/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x9
+cd data/11900291585/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x6
+cd data/11900291585/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x4
+cd data/11900291585/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x2
+cd data/11900291585/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900291585/x5
+cd data/11900291585/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900298369/x7
+cd data/11900298369/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900298369/x1
+cd data/11900298369/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900298369/x3
+cd data/11900298369/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900298369/x6
+cd data/11900298369/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900298369/x4
+cd data/11900298369/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900298369/x2
+cd data/11900298369/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900298369/x5
+cd data/11900298369/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900308225/x1
+cd data/11900308225/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900308225/x3
+cd data/11900308225/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900308225/x4
+cd data/11900308225/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900308225/x2
+cd data/11900308225/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900315777/x7
+cd data/11900315777/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900315777/x8
+cd data/11900315777/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900315777/x1
+cd data/11900315777/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900315777/x3
+cd data/11900315777/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900315777/x6
+cd data/11900315777/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900315777/x4
+cd data/11900315777/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900315777/x2
+cd data/11900315777/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900315777/x5
+cd data/11900315777/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900319233/x7
+cd data/11900319233/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900319233/x8
+cd data/11900319233/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900319233/x1
+cd data/11900319233/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900319233/x3
+cd data/11900319233/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900319233/x9
+cd data/11900319233/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900319233/x6
+cd data/11900319233/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900319233/x4
+cd data/11900319233/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900319233/x2
+cd data/11900319233/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900319233/x5
+cd data/11900319233/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900323585/x1
+cd data/11900323585/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900323585/x3
+cd data/11900323585/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900323585/x4
+cd data/11900323585/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900323585/x2
+cd data/11900323585/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900323585/x5
+cd data/11900323585/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900334593/x7
+cd data/11900334593/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900334593/x8
+cd data/11900334593/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900334593/x1
+cd data/11900334593/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900334593/x3
+cd data/11900334593/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900334593/x6
+cd data/11900334593/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900334593/x4
+cd data/11900334593/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900334593/x2
+cd data/11900334593/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900334593/x5
+cd data/11900334593/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353665/x1
+cd data/11900353665/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353665/x3
+cd data/11900353665/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353665/x4
+cd data/11900353665/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353665/x2
+cd data/11900353665/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353665/x5
+cd data/11900353665/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x19
+cd data/11900353793/x19
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x29
+cd data/11900353793/x29
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x27
+cd data/11900353793/x27
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x10
+cd data/11900353793/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x7
+cd data/11900353793/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x8
+cd data/11900353793/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x35
+cd data/11900353793/x35
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x24
+cd data/11900353793/x24
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x18
+cd data/11900353793/x18
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x37
+cd data/11900353793/x37
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x28
+cd data/11900353793/x28
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x13
+cd data/11900353793/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x36
+cd data/11900353793/x36
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x26
+cd data/11900353793/x26
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x38
+cd data/11900353793/x38
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x31
+cd data/11900353793/x31
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x1
+cd data/11900353793/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x21
+cd data/11900353793/x21
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x22
+cd data/11900353793/x22
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x3
+cd data/11900353793/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x34
+cd data/11900353793/x34
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x25
+cd data/11900353793/x25
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x11
+cd data/11900353793/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x16
+cd data/11900353793/x16
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x15
+cd data/11900353793/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x9
+cd data/11900353793/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x6
+cd data/11900353793/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x17
+cd data/11900353793/x17
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x23
+cd data/11900353793/x23
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x33
+cd data/11900353793/x33
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x32
+cd data/11900353793/x32
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x14
+cd data/11900353793/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x12
+cd data/11900353793/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x20
+cd data/11900353793/x20
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x30
+cd data/11900353793/x30
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x4
+cd data/11900353793/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x2
+cd data/11900353793/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x5
+cd data/11900353793/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900353793/x39
+cd data/11900353793/x39
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354049/x1
+cd data/11900354049/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354049/x3
+cd data/11900354049/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354049/x6
+cd data/11900354049/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354049/x4
+cd data/11900354049/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354049/x2
+cd data/11900354049/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354049/x5
+cd data/11900354049/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354176/x7
+cd data/11900354176/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354176/x8
+cd data/11900354176/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354176/x1
+cd data/11900354176/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354176/x3
+cd data/11900354176/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354176/x9
+cd data/11900354176/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354176/x6
+cd data/11900354176/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354176/x4
+cd data/11900354176/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354176/x2
+cd data/11900354176/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354176/x5
+cd data/11900354176/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354433/x7
+cd data/11900354433/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354433/x8
+cd data/11900354433/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354433/x1
+cd data/11900354433/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354433/x3
+cd data/11900354433/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354433/x6
+cd data/11900354433/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354433/x4
+cd data/11900354433/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354433/x2
+cd data/11900354433/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354433/x5
+cd data/11900354433/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354561/x1
+cd data/11900354561/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354561/x3
+cd data/11900354561/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900354561/x2
+cd data/11900354561/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358401/x1
+cd data/11900358401/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358401/x3
+cd data/11900358401/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358401/x4
+cd data/11900358401/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358401/x2
+cd data/11900358401/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x19
+cd data/11900358529/x19
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x29
+cd data/11900358529/x29
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x27
+cd data/11900358529/x27
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x10
+cd data/11900358529/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x7
+cd data/11900358529/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x8
+cd data/11900358529/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x35
+cd data/11900358529/x35
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x24
+cd data/11900358529/x24
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x18
+cd data/11900358529/x18
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x28
+cd data/11900358529/x28
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x13
+cd data/11900358529/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x26
+cd data/11900358529/x26
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x31
+cd data/11900358529/x31
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x1
+cd data/11900358529/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x21
+cd data/11900358529/x21
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x22
+cd data/11900358529/x22
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x3
+cd data/11900358529/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x34
+cd data/11900358529/x34
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x25
+cd data/11900358529/x25
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x11
+cd data/11900358529/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x16
+cd data/11900358529/x16
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x15
+cd data/11900358529/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x9
+cd data/11900358529/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x6
+cd data/11900358529/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x17
+cd data/11900358529/x17
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x23
+cd data/11900358529/x23
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x33
+cd data/11900358529/x33
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x32
+cd data/11900358529/x32
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x14
+cd data/11900358529/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x12
+cd data/11900358529/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x20
+cd data/11900358529/x20
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x30
+cd data/11900358529/x30
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x4
+cd data/11900358529/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x2
+cd data/11900358529/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358529/x5
+cd data/11900358529/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358785/x1
+cd data/11900358785/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358785/x3
+cd data/11900358785/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358785/x4
+cd data/11900358785/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358785/x2
+cd data/11900358785/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358785/x5
+cd data/11900358785/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358913/x7
+cd data/11900358913/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358913/x1
+cd data/11900358913/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358913/x3
+cd data/11900358913/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358913/x6
+cd data/11900358913/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358913/x4
+cd data/11900358913/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358913/x2
+cd data/11900358913/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900358913/x5
+cd data/11900358913/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359169/x7
+cd data/11900359169/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359169/x8
+cd data/11900359169/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359169/x1
+cd data/11900359169/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359169/x3
+cd data/11900359169/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359169/x6
+cd data/11900359169/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359169/x4
+cd data/11900359169/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359169/x2
+cd data/11900359169/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359169/x5
+cd data/11900359169/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359297/x1
+cd data/11900359297/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359297/x3
+cd data/11900359297/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359297/x4
+cd data/11900359297/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900359297/x2
+cd data/11900359297/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900363264/x1
+cd data/11900363264/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900363264/x3
+cd data/11900363264/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900363264/x4
+cd data/11900363264/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900363264/x2
+cd data/11900363264/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900363264/x5
+cd data/11900363264/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900366977/x7
+cd data/11900366977/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900366977/x8
+cd data/11900366977/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900366977/x1
+cd data/11900366977/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900366977/x3
+cd data/11900366977/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900366977/x6
+cd data/11900366977/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900366977/x4
+cd data/11900366977/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900366977/x2
+cd data/11900366977/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900366977/x5
+cd data/11900366977/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900369025/x7
+cd data/11900369025/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900369025/x8
+cd data/11900369025/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900369025/x1
+cd data/11900369025/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900369025/x3
+cd data/11900369025/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900369025/x6
+cd data/11900369025/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900369025/x4
+cd data/11900369025/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900369025/x2
+cd data/11900369025/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900369025/x5
+cd data/11900369025/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900371585/x7
+cd data/11900371585/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900371585/x1
+cd data/11900371585/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900371585/x3
+cd data/11900371585/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900371585/x6
+cd data/11900371585/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900371585/x4
+cd data/11900371585/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900371585/x2
+cd data/11900371585/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900371585/x5
+cd data/11900371585/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900372353/x1
+cd data/11900372353/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900372353/x2
+cd data/11900372353/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375554/x1
+cd data/11900375554/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375554/x3
+cd data/11900375554/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375554/x2
+cd data/11900375554/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375681/x1
+cd data/11900375681/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375681/x3
+cd data/11900375681/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375681/x4
+cd data/11900375681/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375681/x2
+cd data/11900375681/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375682/x1
+cd data/11900375682/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375682/x3
+cd data/11900375682/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375682/x4
+cd data/11900375682/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375682/x2
+cd data/11900375682/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900375682/x5
+cd data/11900375682/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376961/x1
+cd data/11900376961/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376961/x3
+cd data/11900376961/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376961/x2
+cd data/11900376961/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376962/x7
+cd data/11900376962/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376962/x1
+cd data/11900376962/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376962/x3
+cd data/11900376962/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376962/x6
+cd data/11900376962/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376962/x4
+cd data/11900376962/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376962/x2
+cd data/11900376962/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900376962/x5
+cd data/11900376962/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900377089/x1
+cd data/11900377089/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900377089/x3
+cd data/11900377089/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900377089/x6
+cd data/11900377089/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900377089/x4
+cd data/11900377089/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900377089/x2
+cd data/11900377089/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900377089/x5
+cd data/11900377089/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900378241/x1
+cd data/11900378241/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900378241/x3
+cd data/11900378241/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900378241/x2
+cd data/11900378241/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900378369/x1
+cd data/11900378369/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900378369/x3
+cd data/11900378369/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900378369/x4
+cd data/11900378369/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900378369/x2
+cd data/11900378369/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900378369/x5
+cd data/11900378369/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900384001/x1
+cd data/11900384001/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900384001/x3
+cd data/11900384001/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900384001/x2
+cd data/11900384001/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900384129/x1
+cd data/11900384129/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900384129/x3
+cd data/11900384129/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900384129/x4
+cd data/11900384129/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900384129/x2
+cd data/11900384129/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900386049/x1
+cd data/11900386049/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900386049/x3
+cd data/11900386049/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900386049/x2
+cd data/11900386049/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900386817/x1
+cd data/11900386817/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900386817/x3
+cd data/11900386817/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900386817/x4
+cd data/11900386817/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900386817/x2
+cd data/11900386817/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393089/x1
+cd data/11900393089/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393089/x3
+cd data/11900393089/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393089/x4
+cd data/11900393089/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393089/x2
+cd data/11900393089/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393217/x7
+cd data/11900393217/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393217/x1
+cd data/11900393217/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393217/x3
+cd data/11900393217/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393217/x6
+cd data/11900393217/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393217/x4
+cd data/11900393217/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393217/x2
+cd data/11900393217/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393217/x5
+cd data/11900393217/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x19
+cd data/11900393345/x19
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x29
+cd data/11900393345/x29
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x27
+cd data/11900393345/x27
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x10
+cd data/11900393345/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x7
+cd data/11900393345/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x8
+cd data/11900393345/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x24
+cd data/11900393345/x24
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x18
+cd data/11900393345/x18
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x28
+cd data/11900393345/x28
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x13
+cd data/11900393345/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x26
+cd data/11900393345/x26
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x31
+cd data/11900393345/x31
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x1
+cd data/11900393345/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x21
+cd data/11900393345/x21
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x22
+cd data/11900393345/x22
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x3
+cd data/11900393345/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x34
+cd data/11900393345/x34
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x25
+cd data/11900393345/x25
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x11
+cd data/11900393345/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x16
+cd data/11900393345/x16
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x15
+cd data/11900393345/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x9
+cd data/11900393345/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x6
+cd data/11900393345/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x17
+cd data/11900393345/x17
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x23
+cd data/11900393345/x23
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x33
+cd data/11900393345/x33
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x32
+cd data/11900393345/x32
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x14
+cd data/11900393345/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x12
+cd data/11900393345/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x20
+cd data/11900393345/x20
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x30
+cd data/11900393345/x30
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x4
+cd data/11900393345/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x2
+cd data/11900393345/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900393345/x5
+cd data/11900393345/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396417/x1
+cd data/11900396417/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396417/x3
+cd data/11900396417/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396417/x4
+cd data/11900396417/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396417/x2
+cd data/11900396417/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396545/x7
+cd data/11900396545/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396545/x8
+cd data/11900396545/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396545/x1
+cd data/11900396545/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396545/x3
+cd data/11900396545/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396545/x6
+cd data/11900396545/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396545/x4
+cd data/11900396545/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396545/x2
+cd data/11900396545/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396545/x5
+cd data/11900396545/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396801/x1
+cd data/11900396801/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396801/x3
+cd data/11900396801/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396801/x4
+cd data/11900396801/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900396801/x2
+cd data/11900396801/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900434689/x1
+cd data/11900434689/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900434689/x2
+cd data/11900434689/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900434817/x1
+cd data/11900434817/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900434817/x3
+cd data/11900434817/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900434817/x2
+cd data/11900434817/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x19
+cd data/11900439553/x19
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x29
+cd data/11900439553/x29
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x27
+cd data/11900439553/x27
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x10
+cd data/11900439553/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x7
+cd data/11900439553/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x8
+cd data/11900439553/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x24
+cd data/11900439553/x24
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x18
+cd data/11900439553/x18
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x28
+cd data/11900439553/x28
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x13
+cd data/11900439553/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x26
+cd data/11900439553/x26
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x1
+cd data/11900439553/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x21
+cd data/11900439553/x21
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x22
+cd data/11900439553/x22
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x3
+cd data/11900439553/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x25
+cd data/11900439553/x25
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x11
+cd data/11900439553/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x16
+cd data/11900439553/x16
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x15
+cd data/11900439553/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x9
+cd data/11900439553/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x6
+cd data/11900439553/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x17
+cd data/11900439553/x17
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x23
+cd data/11900439553/x23
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x14
+cd data/11900439553/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x12
+cd data/11900439553/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x20
+cd data/11900439553/x20
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x4
+cd data/11900439553/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x2
+cd data/11900439553/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900439553/x5
+cd data/11900439553/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900442497/x7
+cd data/11900442497/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900442497/x1
+cd data/11900442497/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900442497/x3
+cd data/11900442497/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900442497/x6
+cd data/11900442497/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900442497/x4
+cd data/11900442497/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900442497/x2
+cd data/11900442497/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900442497/x5
+cd data/11900442497/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900533376/x1
+cd data/11900533376/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900533376/x2
+cd data/11900533376/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900540160/x1
+cd data/11900540160/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900540160/x3
+cd data/11900540160/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900540160/x4
+cd data/11900540160/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900540160/x2
+cd data/11900540160/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900540160/x5
+cd data/11900540160/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900569344/x7
+cd data/11900569344/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900569344/x1
+cd data/11900569344/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900569344/x3
+cd data/11900569344/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900569344/x6
+cd data/11900569344/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900569344/x4
+cd data/11900569344/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900569344/x2
+cd data/11900569344/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900569344/x5
+cd data/11900569344/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900572544/x1
+cd data/11900572544/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900572544/x3
+cd data/11900572544/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900572544/x6
+cd data/11900572544/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900572544/x4
+cd data/11900572544/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900572544/x2
+cd data/11900572544/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900572544/x5
+cd data/11900572544/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900574464/x7
+cd data/11900574464/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900574464/x8
+cd data/11900574464/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900574464/x1
+cd data/11900574464/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900574464/x3
+cd data/11900574464/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900574464/x6
+cd data/11900574464/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900574464/x4
+cd data/11900574464/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900574464/x2
+cd data/11900574464/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900574464/x5
+cd data/11900574464/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900593408/x1
+cd data/11900593408/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900593408/x3
+cd data/11900593408/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900593408/x4
+cd data/11900593408/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900593408/x2
+cd data/11900593408/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11900593408/x5
+cd data/11900593408/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406530/x7
+cd data/11908406530/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406530/x1
+cd data/11908406530/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406530/x3
+cd data/11908406530/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406530/x6
+cd data/11908406530/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406530/x4
+cd data/11908406530/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406530/x2
+cd data/11908406530/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406530/x5
+cd data/11908406530/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406531/x1
+cd data/11908406531/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406531/x3
+cd data/11908406531/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406531/x2
+cd data/11908406531/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406541/x1
+cd data/11908406541/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406541/x3
+cd data/11908406541/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406541/x6
+cd data/11908406541/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406541/x4
+cd data/11908406541/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406541/x2
+cd data/11908406541/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908406541/x5
+cd data/11908406541/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407041/x7
+cd data/11908407041/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407041/x1
+cd data/11908407041/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407041/x3
+cd data/11908407041/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407041/x6
+cd data/11908407041/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407041/x4
+cd data/11908407041/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407041/x2
+cd data/11908407041/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407041/x5
+cd data/11908407041/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407042/x1
+cd data/11908407042/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407042/x3
+cd data/11908407042/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407042/x4
+cd data/11908407042/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407042/x2
+cd data/11908407042/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407042/x5
+cd data/11908407042/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407043/x1
+cd data/11908407043/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407043/x3
+cd data/11908407043/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407043/x2
+cd data/11908407043/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407054/x1
+cd data/11908407054/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407054/x3
+cd data/11908407054/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407054/x4
+cd data/11908407054/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407054/x2
+cd data/11908407054/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407078/x1
+cd data/11908407078/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407078/x3
+cd data/11908407078/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908407078/x2
+cd data/11908407078/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908410625/x1
+cd data/11908410625/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908410625/x3
+cd data/11908410625/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908410625/x4
+cd data/11908410625/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908410625/x2
+cd data/11908410625/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908410626/x1
+cd data/11908410626/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908410626/x3
+cd data/11908410626/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908410626/x4
+cd data/11908410626/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908410626/x2
+cd data/11908410626/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908410626/x5
+cd data/11908410626/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908411137/x1
+cd data/11908411137/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908411137/x3
+cd data/11908411137/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908411137/x2
+cd data/11908411137/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908411138/x1
+cd data/11908411138/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908411138/x3
+cd data/11908411138/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908411138/x4
+cd data/11908411138/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908411138/x2
+cd data/11908411138/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908411138/x5
+cd data/11908411138/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908423426/x1
+cd data/11908423426/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908423426/x3
+cd data/11908423426/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908423426/x4
+cd data/11908423426/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908423426/x2
+cd data/11908423426/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908423426/x5
+cd data/11908423426/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x19
+cd data/11908468480/x19
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x29
+cd data/11908468480/x29
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x27
+cd data/11908468480/x27
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x10
+cd data/11908468480/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x7
+cd data/11908468480/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x8
+cd data/11908468480/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x35
+cd data/11908468480/x35
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x24
+cd data/11908468480/x24
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x18
+cd data/11908468480/x18
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x37
+cd data/11908468480/x37
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x28
+cd data/11908468480/x28
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x13
+cd data/11908468480/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x36
+cd data/11908468480/x36
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x26
+cd data/11908468480/x26
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x38
+cd data/11908468480/x38
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x31
+cd data/11908468480/x31
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x1
+cd data/11908468480/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x21
+cd data/11908468480/x21
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x22
+cd data/11908468480/x22
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x3
+cd data/11908468480/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x34
+cd data/11908468480/x34
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x25
+cd data/11908468480/x25
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x11
+cd data/11908468480/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x16
+cd data/11908468480/x16
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x15
+cd data/11908468480/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x9
+cd data/11908468480/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x6
+cd data/11908468480/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x17
+cd data/11908468480/x17
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x23
+cd data/11908468480/x23
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x33
+cd data/11908468480/x33
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x32
+cd data/11908468480/x32
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x14
+cd data/11908468480/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x12
+cd data/11908468480/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x20
+cd data/11908468480/x20
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x30
+cd data/11908468480/x30
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x4
+cd data/11908468480/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x2
+cd data/11908468480/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x5
+cd data/11908468480/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908468480/x39
+cd data/11908468480/x39
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908470539/x1
+cd data/11908470539/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908470539/x3
+cd data/11908470539/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908470539/x6
+cd data/11908470539/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908470539/x4
+cd data/11908470539/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908470539/x2
+cd data/11908470539/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908470539/x5
+cd data/11908470539/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908590343/x7
+cd data/11908590343/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908590343/x1
+cd data/11908590343/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908590343/x3
+cd data/11908590343/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908590343/x6
+cd data/11908590343/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908590343/x4
+cd data/11908590343/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908590343/x2
+cd data/11908590343/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908590343/x5
+cd data/11908590343/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605193/x1
+cd data/11908605193/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605193/x3
+cd data/11908605193/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605193/x4
+cd data/11908605193/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605193/x2
+cd data/11908605193/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605193/x5
+cd data/11908605193/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605705/x7
+cd data/11908605705/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605705/x8
+cd data/11908605705/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605705/x1
+cd data/11908605705/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605705/x3
+cd data/11908605705/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605705/x9
+cd data/11908605705/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605705/x6
+cd data/11908605705/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605705/x4
+cd data/11908605705/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605705/x2
+cd data/11908605705/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908605705/x5
+cd data/11908605705/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908621063/x1
+cd data/11908621063/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908621063/x3
+cd data/11908621063/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908621063/x6
+cd data/11908621063/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908621063/x4
+cd data/11908621063/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908621063/x2
+cd data/11908621063/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908621063/x5
+cd data/11908621063/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908658945/x1
+cd data/11908658945/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908658945/x3
+cd data/11908658945/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908658945/x4
+cd data/11908658945/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908658945/x2
+cd data/11908658945/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908658945/x5
+cd data/11908658945/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659457/x1
+cd data/11908659457/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659457/x3
+cd data/11908659457/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659457/x2
+cd data/11908659457/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x19
+cd data/11908659969/x19
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x29
+cd data/11908659969/x29
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x27
+cd data/11908659969/x27
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x10
+cd data/11908659969/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x7
+cd data/11908659969/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x8
+cd data/11908659969/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x24
+cd data/11908659969/x24
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x18
+cd data/11908659969/x18
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x28
+cd data/11908659969/x28
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x13
+cd data/11908659969/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x26
+cd data/11908659969/x26
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x31
+cd data/11908659969/x31
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x1
+cd data/11908659969/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x21
+cd data/11908659969/x21
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x22
+cd data/11908659969/x22
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x3
+cd data/11908659969/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x34
+cd data/11908659969/x34
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x25
+cd data/11908659969/x25
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x11
+cd data/11908659969/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x16
+cd data/11908659969/x16
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x15
+cd data/11908659969/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x9
+cd data/11908659969/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x6
+cd data/11908659969/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x17
+cd data/11908659969/x17
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x23
+cd data/11908659969/x23
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x33
+cd data/11908659969/x33
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x32
+cd data/11908659969/x32
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x14
+cd data/11908659969/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x12
+cd data/11908659969/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x20
+cd data/11908659969/x20
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x30
+cd data/11908659969/x30
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x4
+cd data/11908659969/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x2
+cd data/11908659969/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908659969/x5
+cd data/11908659969/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908661505/x7
+cd data/11908661505/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908661505/x8
+cd data/11908661505/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908661505/x1
+cd data/11908661505/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908661505/x3
+cd data/11908661505/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908661505/x6
+cd data/11908661505/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908661505/x4
+cd data/11908661505/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908661505/x2
+cd data/11908661505/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908661505/x5
+cd data/11908661505/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908662017/x7
+cd data/11908662017/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908662017/x8
+cd data/11908662017/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908662017/x1
+cd data/11908662017/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908662017/x3
+cd data/11908662017/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908662017/x6
+cd data/11908662017/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908662017/x4
+cd data/11908662017/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908662017/x2
+cd data/11908662017/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908662017/x5
+cd data/11908662017/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768003/x1
+cd data/11908768003/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768003/x2
+cd data/11908768003/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768515/x7
+cd data/11908768515/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768515/x8
+cd data/11908768515/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768515/x1
+cd data/11908768515/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768515/x3
+cd data/11908768515/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768515/x6
+cd data/11908768515/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768515/x4
+cd data/11908768515/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768515/x2
+cd data/11908768515/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908768515/x5
+cd data/11908768515/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908787466/x1
+cd data/11908787466/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908787466/x2
+cd data/11908787466/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908788490/x7
+cd data/11908788490/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908788490/x1
+cd data/11908788490/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908788490/x3
+cd data/11908788490/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908788490/x6
+cd data/11908788490/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908788490/x4
+cd data/11908788490/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908788490/x2
+cd data/11908788490/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908788490/x5
+cd data/11908788490/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908798212/x7
+cd data/11908798212/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908798212/x8
+cd data/11908798212/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908798212/x1
+cd data/11908798212/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908798212/x3
+cd data/11908798212/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908798212/x9
+cd data/11908798212/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908798212/x6
+cd data/11908798212/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908798212/x4
+cd data/11908798212/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908798212/x2
+cd data/11908798212/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908798212/x5
+cd data/11908798212/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908832514/x1
+cd data/11908832514/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908832514/x3
+cd data/11908832514/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908832514/x4
+cd data/11908832514/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908832514/x2
+cd data/11908832514/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908869383/x7
+cd data/11908869383/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908869383/x8
+cd data/11908869383/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908869383/x1
+cd data/11908869383/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908869383/x3
+cd data/11908869383/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908869383/x9
+cd data/11908869383/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908869383/x6
+cd data/11908869383/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908869383/x4
+cd data/11908869383/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908869383/x2
+cd data/11908869383/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908869383/x5
+cd data/11908869383/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908887810/x1
+cd data/11908887810/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908887810/x3
+cd data/11908887810/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908887810/x2
+cd data/11908887810/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x19
+cd data/11908889346/x19
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x29
+cd data/11908889346/x29
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x27
+cd data/11908889346/x27
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x10
+cd data/11908889346/x10
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x7
+cd data/11908889346/x7
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x8
+cd data/11908889346/x8
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x24
+cd data/11908889346/x24
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x18
+cd data/11908889346/x18
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x28
+cd data/11908889346/x28
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x13
+cd data/11908889346/x13
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x26
+cd data/11908889346/x26
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x31
+cd data/11908889346/x31
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x1
+cd data/11908889346/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x21
+cd data/11908889346/x21
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x22
+cd data/11908889346/x22
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x3
+cd data/11908889346/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x25
+cd data/11908889346/x25
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x11
+cd data/11908889346/x11
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x16
+cd data/11908889346/x16
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x15
+cd data/11908889346/x15
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x9
+cd data/11908889346/x9
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x6
+cd data/11908889346/x6
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x17
+cd data/11908889346/x17
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x23
+cd data/11908889346/x23
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x33
+cd data/11908889346/x33
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x32
+cd data/11908889346/x32
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x14
+cd data/11908889346/x14
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x12
+cd data/11908889346/x12
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x20
+cd data/11908889346/x20
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x30
+cd data/11908889346/x30
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x4
+cd data/11908889346/x4
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x2
+cd data/11908889346/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889346/x5
+cd data/11908889346/x5
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908889858/x1
+cd data/11908889858/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908906244/x1
+cd data/11908906244/x1
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908906244/x3
+cd data/11908906244/x3
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
+cp fit_spec.py data/11908906244/x2
+cd data/11908906244/x2
+python3 fit_spec.py
+cd /home/yijia/work/EP_ULX
+
