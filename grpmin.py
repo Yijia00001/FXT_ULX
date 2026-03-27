@@ -8,50 +8,38 @@ import numpy as np
 #exec(open("func.py").read())
 
 #source_name = 'x1'
-mincts = 15
 
-# if len(sys.argv)>1:
-#     obsid = sys.argv[1]
-# if len(sys.argv)>2:
-#     source_name = sys.argv[2]
-# if len(sys.argv)>3:
-#     mincts = int(sys.argv[3])
-
-# obsid_list = get_lines_from_file('source_ra_dec.txt')
-# obsid_list = ['893_2_0_3761.reg']
 obsid_list = []
 with open('./obsid_list.txt', 'r') as f:
     for line in f:
         obsid_list.append(line.strip())
 
+finish_obsid_list = np.loadtxt('finish.txt', dtype=int)
+
+#gal_list = ['NGC1313', 'NGC5128', 'NGC247', 'NGC7793', 'NGC55', 'NGC0224', 'NGC1316', 'NGC4038', 'NGC0925', 'IC0342', 'M82']
+
 for obsid in obsid_list:
+    if int(obsid) in finish_obsid_list:
+        print('skip finished obsid: ', obsid)
+        continue
+
     source_name_path = glob.glob('./data/' + obsid + '/a/' + 'x*.reg')
     print(source_name_path)
     for i in range(len(source_name_path)):
         source_name = source_name_path[i].split('/')[-1].split('.')[0]
-        for inst in ['a', 'b']:
+        for inst in ['a', 'b', 'bkg']:
+            mincts = 15
             # fsrc = obsid + '/ener_res/' + 'x1.pi'
             # frmf = obsid + '/ener_res/' + 'x1.rmf'
-            fsrc = 'data/' + obsid + '/' + inst + '/' + source_name + '/' + source_name + '.pi'
-            frmf = 'data/' + obsid + '/' + inst + '/' + source_name + '/' + source_name + '.rmf'
-            #mincts = 15
+            if inst=='bkg':
+                fsrc = 'data/' + obsid + '/bkg_spec/bkg_a.pi'
+                frmf = 'data/' + obsid + '/bkg_spec/bkg_a.rmf'
+                fgrp_name = 'data/' + obsid + '/bkg_spec/bkg_a.grp'
+            else:
+                fsrc = 'data/' + obsid + '/' + source_name + '/' + source_name + '_' + inst + '.pi'
+                frmf = 'data/' + obsid + '/' + source_name + '/' + source_name + '_' + inst  + '.rmf'
+                fgrp_name = 'data/' + obsid + '/' + source_name + '/' + source_name + '_' + inst + '.grp'
             enlow = 0.51
-            
-            #~ args = sys.argv
-            
-            #~ if len(args) == 5:
-                #~ fsrc = args[1]
-                #~ frmf = args[2]
-                #~ mincts = np.float(args[3])
-                #~ enlow = np.float(args[4])
-                #~ if not os.path.exists(fsrc):
-                    #~ print("*** File %s not exist ***" & fsrc)
-                #~ if not os.path.exists(frmf):
-                    #~ print("*** File %s not exist ***" & frmf)    
-            #~ else:
-                #~ print("Usage:")
-                #~ print("   grpmin f.pi f.rmf 25 0.3")
-                #~ sys.exit()
             
             hdulist = fits.open(fsrc)
             hdu_spec = hdulist[1]
@@ -71,8 +59,8 @@ for obsid in obsid_list:
             
             q = np.where(e_min >= enlow)
             ch = q[0][0]
-            
-            fgrp_name = fsrc.split('.')[0] + '.grp'
+            q_max = np.where(e_max <= 10.0)
+            ch_max = q_max[-1][-1]
             
             fgrp = open(fgrp_name, "w")
             fgrp.write("%5d %5d %5d\n" % (channel[0], ch - 1, ch - channel[0]))
@@ -80,9 +68,13 @@ for obsid in obsid_list:
             # first and last channel no.
             ch0 = channel[0] # ch0 may be 0 or 1
             maxch = channel[-1]
+            total_counts = src_cts[ch-ch0:ch_max-ch0+1].sum()
+            if total_counts<30:
+                mincts = 3
+            with open('data/' + obsid + '/' + source_name + '/mincts_' + inst, 'w') as f_temp:
+                f_temp.write(str(mincts) + '\n')
             
             while ch <= maxch:
-            
                 dch = 1
                 ch1 = ch + dch - 1
                 if ch1 > maxch:
