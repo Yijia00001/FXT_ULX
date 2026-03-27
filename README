@@ -6,14 +6,14 @@
 ## unzip all of the zip data files from ~/downloads/ to the data folder
 . unzip_mkdata_dir
 
-## copy bkg reg to all of the obsid folders
-python3 cp_bkg_files.py
-
 ## plug the obsid list to obsid_list.txt
 ls data > obsid_list.txt
 
 ## RUN the wavedetect to detect sources, need CIAO environment
 . 0.wavdetect_source 
+
+## copy bkg reg to all of the obsid folders
+python3 cp_bkg_files.py
 
 ## generate the exposure map, need fxtsoft environment
 . 1.gen_expo_img
