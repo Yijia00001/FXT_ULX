@@ -54,10 +54,17 @@ def write_reg_file(path, ra, dec, ra_axis, dec_axis, angle):
         f.write('global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1\n')
         f.write('ellipse(' + ra + ',' + dec + ',' + ra_axis + ',' + dec_axis + ',' + angle + ')\n')
 
+finish_obsid_list = np.loadtxt('finish.txt', dtype=int)
+
 obs_id_path = glob.glob('./data/*')
 pixel_size = 9.66866 ## arcsec per pixel
 
 for i in range(len(obs_id_path)):
+    obsid = obs_id_path[i].split('/')[-1]
+    if int(obsid) in finish_obsid_list:
+        print('skip finished obsid: ', obsid)
+        continue
+
     src_a = fits.open(obs_id_path[i] + '/a/wav_src.fits')[1].data
     src_b = fits.open(obs_id_path[i] + '/b/wav_src.fits')[1].data
     ra_list_a, dec_list_a, x_list_a, y_list_a = src_a['RA'], src_a['DEC'], src_a['X'], src_a['Y']
@@ -65,9 +72,17 @@ for i in range(len(obs_id_path)):
 
     a_reg = read_reg_file(obs_id_path[i] + '/a/wavdetect.reg')
     b_reg = read_reg_file(obs_id_path[i] + '/b/wavdetect.reg')
+    ## the reg files is needed to be sorted by RA
+    ra_temp_list_a = []
+    for j in range(len(a_reg)):
+        x0_a, y0_a, x0_axis_a, y0_axis_a, angle_a = get_coord(a_reg[j])
+        r_a = ((x_list_a - x0_a) ** 2 + (y_list_a - y0_a) ** 2) ** 0.5
+        ra_a, dec_a = ra_list_a[r_a < 1][0], dec_list_a[r_a < 1][0]
+        ra_temp_list_a.append(float(ra_a))
+    sorted_index_a = np.argsort(np.array(ra_temp_list_a))
     source_num = 1
     for k in range(len(a_reg)):
-        x0_a, y0_a, x0_axis_a, y0_axis_a, angle_a = get_coord(a_reg[k])
+        x0_a, y0_a, x0_axis_a, y0_axis_a, angle_a = get_coord(a_reg[sorted_index_a[k]])
         r_a = ((x_list_a-x0_a)**2 + (y_list_a-y0_a)**2)**0.5
         ra_a, dec_a = ra_list_a[r_a<1][0], dec_list_a[r_a<1][0]
         #print(source_a.ra)
@@ -80,7 +95,7 @@ for i in range(len(obs_id_path)):
             ra_b, dec_b = ra_list_b[r_b<1][0], dec_list_b[r_b<1][0]
             source_b = SkyCoord(ra=ra_b*u.degree, dec=dec_b*u.degree, frame='icrs')
             sep = source_a.separation(source_b)
-            if sep.arcsec<10:
+            if sep.arcsec<20 and x0_axis_a>0 and y0_axis_a>0 and x0_axis_b>0 and y0_axis_b>0: ## It seems that not 10 arcseconds is not conservative, here we choose 20 arcseconds
                 coord_temp_a = source_a.to_string('hmsdms').split()
                 coord_temp_b = source_b.to_string('hmsdms').split()
                 ra_hms_a, dec_dms_a = coord_temp_a[0].replace('h', ':').replace('m', ':')[:-1], coord_temp_a[1].replace('d', ':').replace('m', ':')[:-1]
