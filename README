@@ -44,11 +44,6 @@ python3 gen_bkg_spec_files.py
 python3 gen_aprates_files.py
 . run_aprates
 
-## generate xspec files for each source
-# python3 gen_fxt_spec_files.py
-# . run_fit_fxt_spec
-#. 4.gen_fit_file
-
 ## check ULX targets in Walton et al. 2018, If you trust the results from this
 ## selection, you can find the coordinates of targets in ULX_list.py and copy them 
 ## to the top of gen_source_list.py
