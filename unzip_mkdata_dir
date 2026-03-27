@@ -1,0 +1,19 @@
+#!/bin/bash
+## unzip the downloaded data and mk dir
+
+ls ~/download | while read line;
+do
+    cp ~/download/$line ./data
+    temp=(`echo $line | tr '_' ' '`)
+    obsid=${temp[2]}
+    cd data
+    mkdir $obsid
+    
+    mv $line $obsid
+    cd $obsid
+    unzip $line
+    rm $line
+    cd ../..
+    #break
+done
+
