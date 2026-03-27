@@ -1,0 +1,527 @@
+## The script to generate bkg rate flux files for all observations
+
+cp bkg_rate_flux.py data/06800000126/bkg_spec
+cd data/06800000126/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/06800000138/bkg_spec
+cd data/06800000138/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/06800000145/bkg_spec
+cd data/06800000145/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900030081/bkg_spec
+cd data/11900030081/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900043521/bkg_spec
+cd data/11900043521/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900043522/bkg_spec
+cd data/11900043522/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900135809/bkg_spec
+cd data/11900135809/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900168705/bkg_spec
+cd data/11900168705/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900177153/bkg_spec
+cd data/11900177153/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900177154/bkg_spec
+cd data/11900177154/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900213377/bkg_spec
+cd data/11900213377/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900275201/bkg_spec
+cd data/11900275201/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900279553/bkg_spec
+cd data/11900279553/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900282369/bkg_spec
+cd data/11900282369/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900282497/bkg_spec
+cd data/11900282497/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900284674/bkg_spec
+cd data/11900284674/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900291073/bkg_spec
+cd data/11900291073/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900291585/bkg_spec
+cd data/11900291585/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900298369/bkg_spec
+cd data/11900298369/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900308225/bkg_spec
+cd data/11900308225/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900315777/bkg_spec
+cd data/11900315777/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900319233/bkg_spec
+cd data/11900319233/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900323585/bkg_spec
+cd data/11900323585/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900334593/bkg_spec
+cd data/11900334593/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900353665/bkg_spec
+cd data/11900353665/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900353793/bkg_spec
+cd data/11900353793/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900354049/bkg_spec
+cd data/11900354049/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900354176/bkg_spec
+cd data/11900354176/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900354433/bkg_spec
+cd data/11900354433/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900354561/bkg_spec
+cd data/11900354561/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900358401/bkg_spec
+cd data/11900358401/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900358529/bkg_spec
+cd data/11900358529/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900358785/bkg_spec
+cd data/11900358785/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900358913/bkg_spec
+cd data/11900358913/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900359169/bkg_spec
+cd data/11900359169/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900359297/bkg_spec
+cd data/11900359297/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900363264/bkg_spec
+cd data/11900363264/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900366977/bkg_spec
+cd data/11900366977/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900369025/bkg_spec
+cd data/11900369025/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900371585/bkg_spec
+cd data/11900371585/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900372353/bkg_spec
+cd data/11900372353/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900375554/bkg_spec
+cd data/11900375554/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900375681/bkg_spec
+cd data/11900375681/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900375682/bkg_spec
+cd data/11900375682/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900376961/bkg_spec
+cd data/11900376961/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900376962/bkg_spec
+cd data/11900376962/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900377089/bkg_spec
+cd data/11900377089/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900378241/bkg_spec
+cd data/11900378241/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900378369/bkg_spec
+cd data/11900378369/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900384001/bkg_spec
+cd data/11900384001/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900384129/bkg_spec
+cd data/11900384129/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900386049/bkg_spec
+cd data/11900386049/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900386817/bkg_spec
+cd data/11900386817/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900393089/bkg_spec
+cd data/11900393089/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900393217/bkg_spec
+cd data/11900393217/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900393345/bkg_spec
+cd data/11900393345/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900396417/bkg_spec
+cd data/11900396417/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900396545/bkg_spec
+cd data/11900396545/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900396801/bkg_spec
+cd data/11900396801/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900434689/bkg_spec
+cd data/11900434689/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900434817/bkg_spec
+cd data/11900434817/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900439553/bkg_spec
+cd data/11900439553/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900442497/bkg_spec
+cd data/11900442497/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900533376/bkg_spec
+cd data/11900533376/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900540160/bkg_spec
+cd data/11900540160/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900569344/bkg_spec
+cd data/11900569344/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900572544/bkg_spec
+cd data/11900572544/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900574464/bkg_spec
+cd data/11900574464/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11900593408/bkg_spec
+cd data/11900593408/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908406530/bkg_spec
+cd data/11908406530/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908406531/bkg_spec
+cd data/11908406531/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908406541/bkg_spec
+cd data/11908406541/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908407041/bkg_spec
+cd data/11908407041/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908407042/bkg_spec
+cd data/11908407042/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908407043/bkg_spec
+cd data/11908407043/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908407054/bkg_spec
+cd data/11908407054/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908407078/bkg_spec
+cd data/11908407078/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908410625/bkg_spec
+cd data/11908410625/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908410626/bkg_spec
+cd data/11908410626/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908411137/bkg_spec
+cd data/11908411137/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908411138/bkg_spec
+cd data/11908411138/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908423426/bkg_spec
+cd data/11908423426/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908468480/bkg_spec
+cd data/11908468480/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908470539/bkg_spec
+cd data/11908470539/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908590343/bkg_spec
+cd data/11908590343/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908605193/bkg_spec
+cd data/11908605193/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908605705/bkg_spec
+cd data/11908605705/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908621063/bkg_spec
+cd data/11908621063/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908621574/bkg_spec
+cd data/11908621574/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908658945/bkg_spec
+cd data/11908658945/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908659457/bkg_spec
+cd data/11908659457/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908659969/bkg_spec
+cd data/11908659969/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908661505/bkg_spec
+cd data/11908661505/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908662017/bkg_spec
+cd data/11908662017/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908768003/bkg_spec
+cd data/11908768003/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908768515/bkg_spec
+cd data/11908768515/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908787466/bkg_spec
+cd data/11908787466/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908788490/bkg_spec
+cd data/11908788490/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908798212/bkg_spec
+cd data/11908798212/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908832514/bkg_spec
+cd data/11908832514/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908869383/bkg_spec
+cd data/11908869383/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908887810/bkg_spec
+cd data/11908887810/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908889346/bkg_spec
+cd data/11908889346/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908889858/bkg_spec
+cd data/11908889858/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
+cp bkg_rate_flux.py data/11908906244/bkg_spec
+cd data/11908906244/bkg_spec
+python3 bkg_rate_flux.py
+cd /home/yijia/work/EP_ULX
+
