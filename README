@@ -1,5 +1,17 @@
 ## THE README IS FOR HOW TO RUN THE CODEs
 
+## finish files in the file, utilized in 0., 1., generate_source_reg, 
+## finish.txt
+
+## unzip all of the zip data files from ~/downloads/ to the data folder
+. unzip_mkdata_dir
+
+## copy bkg reg to all of the obsid folders
+python3 cp_bkg_files.py
+
+## plug the obsid list to obsid_list.txt
+ls data > obsid_list.txt
+
 ## RUN the wavedetect to detect sources, need CIAO environment
 . 0.wavdetect_source 
 
@@ -20,8 +32,22 @@ python3 grpmin.py
 ## grppha spectra utilizing the grp files from grpmin.py
 .  3.grp_spec
 
+## fit the spectrum of sources in source_list.txt
+python3 gen_fxt_spec_files.py
+. run_fit_fxt_spec
+
+## Here I would like to generate the spectrum for bkg sources
+python3 gen_bkg_spec_files.py
+. run_gen_bkg_rate_flux
+
+## estimate count rate of each source using aprates, need CIAO environment
+python3 gen_aprates_files.py
+. run_aprates
+
 ## generate xspec files for each source
-. 4.gen_fit_file
+# python3 gen_fxt_spec_files.py
+# . run_fit_fxt_spec
+#. 4.gen_fit_file
 
 ## check ULX targets in Walton et al. 2018, If you trust the results from this
 ## selection, you can find the coordinates of targets in ULX_list.py and copy them 
@@ -31,11 +57,11 @@ python3 check_ULX_in_gal.py
 ## generate source list for given known sources
 python3 gen_source_list.py
 
-## fit the spectrum of sources in source_list.txt
-. 5.fit_spec
 
 ## plot the results of ULXs
 python3 plot_ULX.py
+## plot the results of selected sources
+python3 plot_select_sources.py
 
 ## generate the ref sources from CSC and sxps
 python3 gen_csc_list.py
